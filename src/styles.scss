@@ -251,8 +251,6 @@ html, body {
 /* Optimize scrolling performance during animations */
 * {
   /* GPU acceleration for better performance */
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
   
   /* Prevent layout shifts during hover */
   will-change: auto;
