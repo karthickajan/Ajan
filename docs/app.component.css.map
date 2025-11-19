@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/app.component.scss"],
+  "sourcesContent": ["// Section placeholders for navigation testing\n.section-placeholder {\n  min-height: 100vh;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background: #f8fafc;\n  border-bottom: 1px solid #e2e8f0;\n  \n  .container {\n    max-width: 1200px;\n    margin: 0 auto;\n    padding: 0 2rem;\n    text-align: center;\n    \n    h2 {\n      font-size: 2.5rem;\n      color: #1a1a1a;\n      margin: 0;\n      font-weight: 600;\n    }\n  }\n  \n  &:nth-child(even) {\n    background: white;\n  }\n}\n\n// Computer Canvas Section Styling\n.computer-canvas-section {\n  height: 100vh;\n  width: 100%;\n  background: transparent;\n  position: relative;\n  overflow: hidden;\n  margin-top: -280px; // Remove the unwanted top space\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  \n  app-computer-canvas {\n    width: 100%;\n    height: 100%;\n    display: block;\n  }\n}\n\n// Ensure main content accounts for fixed header\nmain {\n  padding-top: 70px;\n}"],
+  "mappings": ";AACA,CAAA;AACE,cAAA;AACA,WAAA;AACA,eAAA;AACA,mBAAA;AACA,cAAA;AACA,iBAAA,IAAA,MAAA;;AAEA,CARF,oBAQE,CAAA;AACE,aAAA;AACA,UAAA,EAAA;AACA,WAAA,EAAA;AACA,cAAA;;AAEA,CAdJ,oBAcI,CANF,UAME;AACE,aAAA;AACA,SAAA;AACA,UAAA;AACA,eAAA;;AAIJ,CAtBF,mBAsBE;AACE,cAAA;;AAKJ,CAAA;AACE,UAAA;AACA,SAAA;AACA,cAAA;AACA,YAAA;AACA,YAAA;AACA,cAAA;AACA,WAAA;AACA,eAAA;AACA,mBAAA;;AAEA,CAXF,wBAWE;AACE,SAAA;AACA,UAAA;AACA,WAAA;;AAKJ;AACE,eAAA;;",
+  "names": []
+}

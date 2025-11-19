@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/components/computer-canvas/computer-canvas.component.scss"],
+  "sourcesContent": [".computer-canvas-container {\n  width: 100%;\n  height: 100%;\n  min-height: 600px;\n  background: transparent;\n  position: relative;\n  display: block;\n  overflow: hidden;\n  margin: 0;\n  padding: 0;\n  top: 0;\n  \n  canvas {\n    width: 100% !important;\n    height: 100% !important;\n    display: block !important;\n    margin: 0 !important;\n    padding: 0 !important;\n    position: absolute !important;\n    top: 0 !important;\n    left: 0 !important;\n  }\n}\n\n@media (max-width: 768px) {\n  .computer-canvas-container {\n    min-height: 400px;\n  }\n}\n"],
+  "mappings": ";AAAA,CAAA;AACE,SAAA;AACA,UAAA;AACA,cAAA;AACA,cAAA;AACA,YAAA;AACA,WAAA;AACA,YAAA;AACA,UAAA;AACA,WAAA;AACA,OAAA;;AAEA,CAZF,0BAYE;AACE,SAAA;AACA,UAAA;AACA,WAAA;AACA,UAAA;AACA,WAAA;AACA,YAAA;AACA,OAAA;AACA,QAAA;;AAIJ,OAAA,CAAA,SAAA,EAAA;AACE,GAzBF;AA0BI,gBAAA;;;",
+  "names": []
+}
