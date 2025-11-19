@@ -24,7 +24,7 @@ export class FooterComponent implements OnInit {
     });
   }
 
-  @HostListener('window:scroll', ['$event'])
+  @HostListener('window:scroll')
   onWindowScroll() {
     this.showBackToTop = window.pageYOffset > 300;
   }

@@ -35,8 +35,8 @@ export class ProjectsComponent implements OnInit, OnDestroy, AfterViewInit {
         { name: "Next.js", color: "text-purple-400" }
       ],
       image: "assets/AurGee_project.jpg",
-      source_code_link: "https://github.com/sunnypatell/FinancialFlow",
-      live_project_link: "https://financial-flow.vercel.app/"
+      source_code_link: "https://github.com/janaPM/AurGee",
+      live_project_link: "https://aurgeeherbs.com/"
     },
     {
       name: "Sunnify (Spotify Downloader) ♫",
@@ -48,8 +48,8 @@ export class ProjectsComponent implements OnInit, OnDestroy, AfterViewInit {
         { name: "Proxy/API", color: "text-purple-400" }
       ],
       image: "assets/AurGee_project.jpg",
-      source_code_link: "https://github.com/sunnypatell/Sunnify",
-      live_project_link: "https://sunnify-spotify-downloader.vercel.app/"
+      source_code_link: "https://github.com/janaPM/AurGee",
+      live_project_link: "https://aurgeeherbs.com/"
     },
     {
       name: "Enterprise API Tester 🌐",
@@ -61,8 +61,8 @@ export class ProjectsComponent implements OnInit, OnDestroy, AfterViewInit {
         { name: "Authentication-Body", color: "text-orange-400" }
       ],
       image: "assets/AurGee_project.jpg",
-      source_code_link: "https://github.com/sunnypatell/enterprise-api-request-tester",
-      live_project_link: "https://enterprise-api-request-tester.vercel.app/"
+      source_code_link: "https://github.com/janaPM/AurGee",
+      live_project_link: "https://aurgeeherbs.com/"
     },
     {
       name: "KnifeThrow 🎯",
@@ -74,8 +74,8 @@ export class ProjectsComponent implements OnInit, OnDestroy, AfterViewInit {
         { name: "arcadegame", color: "text-purple-400" }
       ],
       image: "assets/AurGee_project.jpg",
-      source_code_link: "https://github.com/sunnypatell/KnifeThrow",
-      live_project_link: "https://github.com/sunnypatell/KnifeThrow"
+      source_code_link: "https://github.com/janaPM/AurGee",
+      live_project_link: "https://aurgeeherbs.com/"
     },
     {
       name: "COVID-19 GTA Cases Data Analysis 🧪",
@@ -89,8 +89,8 @@ export class ProjectsComponent implements OnInit, OnDestroy, AfterViewInit {
         { name: "numpy", color: "text-yellow-400" }
       ],
       image: "assets/AurGee_project.jpg",
-      source_code_link: "https://github.com/sunnypatell/COVID-19-GTA-Cases-Data-Analysis",
-      live_project_link: "https://drive.google.com/drive/folders/1cTbp-6-flypV-kj3-q606UwwWEralu11"
+      source_code_link: "https://github.com/janaPM/AurGee",
+      live_project_link: "https://aurgeeherbs.com/"
     },
     {
       name: "Secure Password Generator 🔐",
@@ -102,8 +102,8 @@ export class ProjectsComponent implements OnInit, OnDestroy, AfterViewInit {
         { name: "data-algorithms", color: "text-purple-400" }
       ],
       image: "assets/AurGee_project.jpg",
-      source_code_link: "https://github.com/sunnypatell/SecurePasswordGenerator",
-      live_project_link: "https://github.com/sunnypatell/SecurePasswordGenerator"
+      source_code_link: "https://github.com/janaPM/AurGee",
+      live_project_link: "https://aurgeeherbs.com/"
     }
   ];
 
