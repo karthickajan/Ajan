@@ -206,16 +206,26 @@ export class ProjectsComponent implements OnInit, OnDestroy, AfterViewInit {
   private initializeTiltEffect() {
     this.projectCards.forEach((cardRef) => {
       const card = cardRef.nativeElement;
+      let isTransitioning = false;
       
       card.addEventListener('mouseenter', () => {
-        card.style.transition = 'transform 0.15s ease-out';
+        card.style.transition = 'transform 0.15s ease-out, box-shadow 0.3s ease';
       });
 
       card.addEventListener('mousemove', (e: MouseEvent) => {
-        // Check if we're hovering over the live project button
+        // Check if we're hovering over interactive elements
         const target = e.target as HTMLElement;
-        if (target.classList.contains('live-project-btn') || target.closest('.live-project-btn')) {
-          return; // Don't apply tilt effect when hovering over the button
+        const isOverButton = target.classList.contains('live-project-btn') || 
+                           target.closest('.live-project-btn') ||
+                           target.classList.contains('source-code-btn') ||
+                           target.closest('.source-code-btn') ||
+                           target.classList.contains('github-icon');
+        
+        if (isOverButton || isTransitioning) {
+          // Reset to neutral position when over buttons - keep the hover lift
+          card.style.transition = 'transform 0.2s ease-out, box-shadow 0.3s ease';
+          card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(-8px)';
+          return;
         }
 
         const rect = card.getBoundingClientRect();
@@ -225,15 +235,20 @@ export class ProjectsComponent implements OnInit, OnDestroy, AfterViewInit {
         const centerX = rect.width / 2;
         const centerY = rect.height / 2;
         
-        const rotateX = (y - centerY) / centerY * 15;  // Reversed: positive for bottom, negative for top
-        const rotateY = (x - centerX) / centerX * -15; // Reversed: negative for right, positive for left
+        // Reduced tilt intensity for smoother interaction
+        const rotateX = (y - centerY) / centerY * 8;
+        const rotateY = (x - centerX) / centerX * -8;
         
-        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`;
       });
 
       card.addEventListener('mouseleave', () => {
-        card.style.transition = 'transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
-        card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
+        isTransitioning = true;
+        card.style.transition = 'transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease';
+        card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0)';
+        setTimeout(() => {
+          isTransitioning = false;
+        }, 500);
       });
     });
   }

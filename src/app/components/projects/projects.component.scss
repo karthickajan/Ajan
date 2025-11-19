@@ -78,11 +78,12 @@
     border-radius: 20px;
     width: 100%;
     max-width: 360px;
-    cursor: pointer;
+    cursor: default;
     position: relative;
     transform-style: preserve-3d;
     opacity: 0;
     transform: translateY(50px);
+    will-change: transform;
 
     // Animation states
     &.animate-in {
@@ -95,15 +96,18 @@
     &.animate-in:hover {
       box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 
                   0 0 30px rgba(145, 94, 255, 0.2);
-      transform: translateY(-8px) translateZ(0); // Add GPU acceleration
 
       .project-overlay {
         opacity: 1;
+        background: linear-gradient(
+          135deg,
+          rgba(0, 0, 0, 0.1) 0%,
+          rgba(0, 0, 0, 0.3) 100%
+        );
       }
 
       .github-icon {
-        filter: drop-shadow(0 0 10px rgba(145, 94, 255, 0.7));
-        transform: translateZ(0); // GPU acceleration
+        filter: drop-shadow(0 0 10px rgba(145, 94, 255, 0.7)) invert(1);
       }
     }
 
@@ -132,13 +136,11 @@
         justify-content: flex-end;
         align-items: flex-start;
         padding: 12px;
+        pointer-events: none;
+        transition: opacity 0.3s ease, background 0.3s ease;
+        background: transparent;
         opacity: 0;
-        transition: opacity 0.3s ease;
-        background: linear-gradient(
-          135deg,
-          rgba(0, 0, 0, 0.1) 0%,
-          rgba(0, 0, 0, 0.3) 100%
-        );
+        z-index: 5;
 
         .source-code-btn {
           background: linear-gradient(135deg, #000 0%, #1a1a1a 100%);
@@ -149,20 +151,25 @@
           justify-content: center;
           align-items: center;
           cursor: pointer;
-          transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          pointer-events: auto;
+          transition: all 0.3s ease;
           border: 1px solid rgba(255, 255, 255, 0.1);
+          position: relative;
+          z-index: 100;
+          transform: translateZ(100px);
 
           &:hover {
             box-shadow: 0 0 20px rgba(145, 94, 255, 0.8);
             background: linear-gradient(135deg, #915eff 0%, #7c3aed 100%);
-            transform: translateZ(0); // GPU acceleration
+            transform: translateZ(100px) scale(1.15);
           }
 
           .github-icon {
             width: 20px;
             height: 20px;
             filter: invert(1);
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: filter 0.3s ease;
+            pointer-events: none;
           }
         }
       }
@@ -170,6 +177,9 @@
 
     // Project Content
     .project-content {
+      position: relative;
+      z-index: 10; // Ensure content stays above card transforms
+      
       .project-name {
         color: white;
         font-weight: 700;
@@ -209,6 +219,7 @@
       }
 
       // Live Project Button
+                  // Live Project Button
       .live-project-btn {
         background: #000000;
         color: white;
@@ -222,12 +233,19 @@
         display: inline-block;
         cursor: pointer;
         position: relative;
-        z-index: 10;
+        z-index: 20;
+        pointer-events: auto;
+        will-change: transform, box-shadow; // Optimize for transforms
+        transform: translateZ(0); // Force GPU acceleration and create stacking context
 
         &:hover {
-          background: #000000;
-          transform: translateY(-2px) translateZ(0) !important; // Add GPU acceleration
+          background: #1a1a1a;
+          transform: translateY(-2px) translateZ(0) !important;
           box-shadow: 0 4px 15px rgba(192, 1, 255, 0.855);
+        }
+
+        &:active {
+          transform: translateY(0) translateZ(0) !important;
         }
       }
     }
