@@ -26,87 +26,87 @@ export class ProjectsComponent implements OnInit, OnDestroy, AfterViewInit {
   
   projects: ProjectData[] = [
     {
-      name: "FinancialFlow 💸",
-      description: "Comprehensive personal finance management application built with Next.js and Typescript. It empowers users to take control of their financial health through intuitive tracking, insightful analytics, and personalized recommendations.",
+      name: "AurGee Herbs 🌿",
+      description: "Freelanced UI for AurGee Herbs, a premium herbal brand. Built with Angular and hosted on AWS. Modern, responsive design tailored for e-commerce and brand storytelling. Backend with Node.js is under development, using Supabase as the database.",
       tags: [
-        { name: "React-native", color: "text-blue-400" },
-        { name: "Typescript", color: "text-green-400" },
-        { name: "Tailwind CSS", color: "text-pink-400" },
-        { name: "Next.js", color: "text-purple-400" }
+        { name: "Angular", color: "text-red-400" },
+        { name: "TypeScript", color: "text-blue-400" },
+        { name: "AWS", color: "text-orange-400" },
+        { name: "UI/UX", color: "text-green-400" },
+        { name: "Supabase", color: "text-purple-400" }
       ],
       image: "assets/AurGee_project.jpg",
-      source_code_link: "https://github.com/janaPM/AurGee",
+      source_code_link: "https://github.com/karthickajan/AurGee",
       live_project_link: "https://aurgeeherbs.com/"
     },
     {
-      name: "Sunnify (Spotify Downloader) ♫",
-      description: "Sunnify is a Spotify downloader webapp/desktop application that allows you to download entire playlists locally onto your Mac/Linux/Windows PC. The web version of the app is hosted on AWS Lambda and Elastic Beanstalk, with FastAPI ASGI production.",
+      name: "Chessy",
+  description: "Chess board prediction and analyser. Upload a photo of a chess board, and Chessy recognizes the board and pieces, recreates the exact position digitally, and suggests the next best move. Built with Python, Flask, YOLO, and Angular for a seamless chess experience.",
       tags: [
-        { name: "python", color: "text-blue-400" },
-        { name: "webscraping", color: "text-green-400" },
-        { name: "AWS Lambda/Beanstalk", color: "text-orange-400" },
-        { name: "Proxy/API", color: "text-purple-400" }
+        { name: "Python", color: "text-blue-400" },
+        { name: "OpenCV", color: "text-green-400" },
+        { name: "AI/ML", color: "text-purple-400" },
+        { name: "Chess", color: "text-orange-400" }
       ],
       image: "assets/AurGee_project.jpg",
-      source_code_link: "https://github.com/janaPM/AurGee",
-      live_project_link: "https://aurgeeherbs.com/"
+      source_code_link: "https://github.com/karthickajan/chessy",
+      live_project_link: "https://github.com/karthickajan/chessy"
     },
     {
       name: "Enterprise API Tester 🌐",
-      description: "Comprehensive API testing tool with support for all major HTTP methods, authentication, and CORS-friendly proxy. Features include request import/export, real-world samples, and local storage for data persistence. Built with Next.js, and TypeScript for optimal performance and developer experience.",
+      description: "Comprehensive API testing tool with support for all major HTTP methods, authentication, and CORS-friendly proxy. Features include request import/export, real-world samples, and local storage for data persistence. Built with Next.js, and TypeScript for optimal performance.",
       tags: [
         { name: "Typescript", color: "text-blue-400" },
         { name: "Tailwind CSS", color: "text-green-400" },
-        { name: "Next.js", color: "text-pink-400" },
-        { name: "Authentication-Body", color: "text-orange-400" }
+        { name: "Next.js", color: "text-pink-400" }
       ],
       image: "assets/AurGee_project.jpg",
       source_code_link: "https://github.com/janaPM/AurGee",
       live_project_link: "https://aurgeeherbs.com/"
     },
-    {
-      name: "KnifeThrow 🎯",
-      description: "KnifeThrow is a Java Swing-based 2D mini-game, packed by maven with over 5000 lines of code. It includes a menu, game-over screens, sound effects, and custom sprites. Players unlock different knives with varied abilities in a dedicated knife shop. The game features improved collision systems, animations, and particle effects for an immersive experience.",
-      tags: [
-        { name: "java", color: "text-red-400" },
-        { name: "swing", color: "text-blue-400" },
-        { name: "maven", color: "text-green-400" },
-        { name: "arcadegame", color: "text-purple-400" }
-      ],
-      image: "assets/AurGee_project.jpg",
-      source_code_link: "https://github.com/janaPM/AurGee",
-      live_project_link: "https://aurgeeherbs.com/"
-    },
-    {
-      name: "COVID-19 GTA Cases Data Analysis 🧪",
-      description: "A deep dive into ongoing COVID-19 outbreaks in the Greater Toronto Area (GTA), Ontario. Using data from a government-licensed dataset called Outbreaks by Public Health Unit (PHU) to explore trends and patterns in these outbreaks. This data analysis integrates the essential aspects of the data science workflow (Filesize: 3.5 MiB, 62699 lines of raw dataset)",
-      tags: [
-        { name: "python", color: "text-blue-400" },
-        { name: "tensorflow", color: "text-orange-400" },
-        { name: "scikit-learn", color: "text-green-400" },
-        { name: "pandas", color: "text-pink-400" },
-        { name: "matplotlib", color: "text-purple-400" },
-        { name: "numpy", color: "text-yellow-400" }
-      ],
-      image: "assets/AurGee_project.jpg",
-      source_code_link: "https://github.com/janaPM/AurGee",
-      live_project_link: "https://aurgeeherbs.com/"
-    },
-    {
-      name: "Secure Password Generator 🔐",
-      description: "Secure Password Generator is a Java-based tool designed to generate and manage secure passwords, prioritizing simplicity, security, and user-friendliness. It employs industry-standard encryption algorithms to create strong, unique passwords resistant to common hacking attempts.",
-      tags: [
-        { name: "java", color: "text-red-400" },
-        { name: "sha-256", color: "text-blue-400" },
-        { name: "encryption/decryption", color: "text-green-400" },
-        { name: "data-algorithms", color: "text-purple-400" }
-      ],
-      image: "assets/AurGee_project.jpg",
-      source_code_link: "https://github.com/janaPM/AurGee",
-      live_project_link: "https://aurgeeherbs.com/"
-    }
+    // {
+    //   name: "KnifeThrow 🎯",
+    //   description: "KnifeThrow is a Java Swing-based 2D mini-game, packed by maven with over 5000 lines of code. It includes a menu, game-over screens, sound effects, and custom sprites. Players unlock different knives with varied abilities in a dedicated knife shop. The game features improved collision systems, animations, and particle effects for an immersive experience.",
+    //   tags: [
+    //     { name: "java", color: "text-red-400" },
+    //     { name: "swing", color: "text-blue-400" },
+    //     { name: "maven", color: "text-green-400" },
+    //     { name: "arcadegame", color: "text-purple-400" }
+    //   ],
+    //   image: "assets/AurGee_project.jpg",
+    //   source_code_link: "https://github.com/janaPM/AurGee",
+    //   live_project_link: "https://aurgeeherbs.com/"
+    // },
+    // {
+    //   name: "COVID-19 GTA Cases Data Analysis 🧪",
+    //   description: "A deep dive into ongoing COVID-19 outbreaks in the Greater Toronto Area (GTA), Ontario. Using data from a government-licensed dataset called Outbreaks by Public Health Unit (PHU) to explore trends and patterns in these outbreaks. This data analysis integrates the essential aspects of the data science workflow (Filesize: 3.5 MiB, 62699 lines of raw dataset)",
+    //   tags: [
+    //     { name: "python", color: "text-blue-400" },
+    //     { name: "tensorflow", color: "text-orange-400" },
+    //     { name: "scikit-learn", color: "text-green-400" },
+    //     { name: "pandas", color: "text-pink-400" },
+    //     { name: "matplotlib", color: "text-purple-400" },
+    //     { name: "numpy", color: "text-yellow-400" }
+    //   ],
+    //   image: "assets/AurGee_project.jpg",
+    //   source_code_link: "https://github.com/janaPM/AurGee",
+    //   live_project_link: "https://aurgeeherbs.com/"
+    // },
+    // {
+    //   name: "Secure Password Generator 🔐",
+    //   description: "Secure Password Generator is a Java-based tool designed to generate and manage secure passwords, prioritizing simplicity, security, and user-friendliness. It employs industry-standard encryption algorithms to create strong, unique passwords resistant to common hacking attempts.",
+    //   tags: [
+    //     { name: "java", color: "text-red-400" },
+    //     { name: "sha-256", color: "text-blue-400" },
+    //     { name: "encryption/decryption", color: "text-green-400" },
+    //     { name: "data-algorithms", color: "text-purple-400" }
+    //   ],
+    //   image: "assets/AurGee_project.jpg",
+    //   source_code_link: "https://github.com/janaPM/AurGee",
+    //   live_project_link: "https://aurgeeherbs.com/"
+    // }
   ];
-
+  // removed stray description property
   constructor(
     @Inject(PLATFORM_ID) private platformId: Object,
     private portfolioService: PortfolioDataService

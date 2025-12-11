@@ -39,6 +39,10 @@ export class PlanetCanvasComponent implements AfterViewInit, OnDestroy {
       if (this.controls) {
         this.controls.dispose();
       }
+      // Clean up document event listeners
+      if ((this as any)._mouseUpHandler) {
+        document.removeEventListener('mouseup', (this as any)._mouseUpHandler);
+      }
     }
   }
 
@@ -168,6 +172,25 @@ export class PlanetCanvasComponent implements AfterViewInit, OnDestroy {
     this.controls.enableZoom = false;
     this.controls.maxPolarAngle = Math.PI / 2;
     this.controls.minPolarAngle = Math.PI / 2;
+
+    // Fix: Release drag when mouse leaves canvas or goes outside window
+    const onMouseUp = () => {
+      // Simulate end of orbit control drag
+      this.controls.enabled = true;
+    };
+
+    const onMouseLeave = () => {
+      // Reset controls state when mouse leaves canvas area
+      this.controls.reset();
+      this.controls.autoRotate = true;
+    };
+
+    // Listen for mouseup on document to catch releases outside canvas
+    document.addEventListener('mouseup', onMouseUp);
+    
+    // Store reference for cleanup
+    (this as any)._mouseUpHandler = onMouseUp;
+    (this as any)._mouseLeaveHandler = onMouseLeave;
   }
 
   private animate() {

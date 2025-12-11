@@ -40,10 +40,9 @@ export class HeroComponent implements OnInit, OnDestroy {
   currentRole = '';
   private roles = [
     'Software Engineer',
-    'Full Stack Developer', 
-    'Cloud Solutions Architect',
+    'Full Stack Developer',
     'Problem Solver',
-    'Systems Administrator'
+    'Salesforce Developer'
   ];
   private currentIndex = 0;
   private typingTimeout?: any;
