@@ -2,6 +2,7 @@ import { Component, OnInit, ElementRef, ViewChild, AfterViewInit, Inject, PLATFO
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { PlanetCanvasComponent } from '../planet-canvas/planet-canvas.component';
+import emailjs from '@emailjs/browser';
 
 @Component({
   selector: 'app-contact',
@@ -94,22 +95,40 @@ export class ContactComponent implements OnInit, AfterViewInit {
     if (this.contactForm.valid) {
       this.isLoading = true;
 
-      // Simulate form submission
-      setTimeout(() => {
-        this.isLoading = false;
-        console.log('Form submitted:', this.contactForm.value);
+      // EmailJS configuration
+      const serviceId = 'service_ajan_portfolio';
+      const templateId = 'template_en4mbbo';
+      const publicKey = 'bKyL0zWrsnsjTQwfK';
 
-        // Show beautiful success popup
-        this.showSuccessPopup = true;
+      const templateParams = {
+        from_name: this.contactForm.value.name,
+        from_email: this.contactForm.value.email,
+        message: this.contactForm.value.message,
+        to_email: 'karthickajangs@gmail.com',
+        cc_email: this.contactForm.value.email,  // CC the sender
+      };
 
-        // Auto-hide popup after 4 seconds
-        setTimeout(() => {
-          this.showSuccessPopup = false;
-        }, 4000);
+      emailjs.send(serviceId, templateId, templateParams, publicKey)
+        .then((response) => {
+          console.log('Email sent successfully!', response.status, response.text);
+          this.isLoading = false;
 
-        this.contactForm.reset();
-        this.isFormSubmitted = false;
-      }, 2000);
+          // Show success popup
+          this.showSuccessPopup = true;
+
+          // Auto-hide popup after 4 seconds
+          setTimeout(() => {
+            this.showSuccessPopup = false;
+          }, 4000);
+
+          this.contactForm.reset();
+          this.isFormSubmitted = false;
+        })
+        .catch((error) => {
+          console.error('Failed to send email:', error);
+          this.isLoading = false;
+          alert('Failed to send message. Please try again later.');
+        });
     }
   }
 }
