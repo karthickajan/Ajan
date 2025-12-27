@@ -9,11 +9,13 @@
 
 | Metric | Count |
 |--------|-------|
+| 👀 Views | <!-- VIEWS_COUNT -->2<!-- /VIEWS_COUNT --> |
+| 📥 Clones | <!-- CLONES_COUNT -->19<!-- /CLONES_COUNT --> |
 | ⭐ Stars | ![Stars](https://img.shields.io/github/stars/karthickajan/Ajan?style=flat-square) |
 | 🍴 Forks | ![Forks](https://img.shields.io/github/forks/karthickajan/Ajan?style=flat-square) |
-| �️ Watchers | ![Watchers](https://img.shields.io/github/watchers/karthickajan/Ajan?style=flat-square) |
+| 👁️ Watchers | ![Watchers](https://img.shields.io/github/watchers/karthickajan/Ajan?style=flat-square) |
 
-> 📈 Views & Clones are tracked daily via GitHub Actions. See [traffic-data/traffic-history.json](traffic-data/traffic-history.json) for full history.
+> 📈 Traffic data updated daily via GitHub Actions. Full history: [traffic-history.json](traffic-data/traffic-history.json)
 
 ---
 
@@ -35,28 +37,70 @@
 
 ---
 
-## 🚀 Development
+## 🚀 Getting Started
 
-### Development server
+### Prerequisites
 
-Run `ng serve --port 4202` for a dev server. Navigate to `http://localhost:4202/`.
+- **Node.js** (v18 or higher)
+- **Angular CLI** (v17 or higher): `npm install -g @angular/cli`
 
-## Code scaffolding
+### Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/karthickajan/Ajan.git
+   cd Ajan
+   ```
 
-## Build
+2. **Install dependencies** (includes Three.js for 3D graphics)
+   ```bash
+   npm install
+   ```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+3. **Run the development server**
+   ```bash
+   ng serve
+   ```
+   Navigate to `http://localhost:4200/`
 
-## Running unit tests
+### Build for Production
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+ng build
+```
 
-## Running end-to-end tests
+The build artifacts will be stored in the `dist/` directory.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 📁 Project Structure
 
-## Further help
+```
+src/
+├── app/components/
+│   ├── hero/              # Hero section
+│   ├── computer-canvas/   # 3D Computer model (Three.js)
+│   ├── planet-canvas/     # 3D Earth globe (Three.js)
+│   ├── about/             # About section
+│   ├── experience/        # Work experience
+│   ├── education/         # Education timeline
+│   ├── skills/            # Skills showcase
+│   ├── projects/          # Project cards
+│   └── contact/           # Contact form (EmailJS)
+├── assets/
+│   ├── desktop_pc/        # 3D Computer model files
+│   └── planet/            # 3D Earth model files
+└── styles.scss
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 🧪 Running Tests
+
+```bash
+ng test
+```
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+<p align="center">Made with ❤️ by Karthick Ajan</p>

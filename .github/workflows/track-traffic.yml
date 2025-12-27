@@ -188,12 +188,33 @@ jobs:
           console.log('Unique Visitors:', history.uniqueVisitors);
           console.log('Unique Cloners:', history.uniqueCloners);
           console.log('Days tracked:', history.dailyData.length);
+          
+          // Update README with current counts
+          const readmePath = 'README.md';
+          if (fs.existsSync(readmePath)) {
+            let readme = fs.readFileSync(readmePath, 'utf8');
+            
+            // Update views count
+            readme = readme.replace(
+              /<!-- VIEWS_COUNT -->\d+<!-- \/VIEWS_COUNT -->/,
+              '<!-- VIEWS_COUNT -->' + history.totalViews + '<!-- /VIEWS_COUNT -->'
+            );
+            
+            // Update clones count
+            readme = readme.replace(
+              /<!-- CLONES_COUNT -->\d+<!-- \/CLONES_COUNT -->/,
+              '<!-- CLONES_COUNT -->' + history.totalClones + '<!-- /CLONES_COUNT -->'
+            );
+            
+            fs.writeFileSync(readmePath, readme);
+            console.log('README updated with current counts!');
+          }
           SCRIPT
       
       - name: Commit and push changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add traffic-data/
+          git add traffic-data/ README.md
           git diff --staged --quiet || git commit -m "📊 Update traffic data [skip ci]"
           git push
