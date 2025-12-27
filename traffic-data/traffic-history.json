@@ -1,0 +1,13 @@
+{
+  "dailyData": [
+    {
+      "date": "2025-12-27",
+      "views": 0,
+      "uniqueVisitors": 0,
+      "clones": 19,
+      "uniqueCloners": 19,
+      "note": "Initial baseline - clones before tracking started"
+    }
+  ],
+  "startTracking": "2025-12-27"
+}

@@ -1,0 +1,199 @@
+name: Track GitHub Traffic
+
+on:
+  schedule:
+    # Runs every day at midnight UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  track-traffic:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.TRAFFIC_TOKEN }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Fetch and store traffic data
+        env:
+          GITHUB_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
+        run: |
+          # Create traffic directory if it doesn't exist
+          mkdir -p traffic-data
+          
+          # Use GitHub context variables (no hardcoding!)
+          REPO_OWNER="${{ github.repository_owner }}"
+          REPO_NAME="${{ github.event.repository.name }}"
+          
+          # Fetch current traffic data from GitHub API
+          echo "Fetching traffic data for $REPO_OWNER/$REPO_NAME..."
+          
+          # Get views and save to file
+          curl -s -H "Authorization: token $GITHUB_TOKEN" \
+            "https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/traffic/views" > /tmp/views.json
+          
+          # Get clones and save to file
+          curl -s -H "Authorization: token $GITHUB_TOKEN" \
+            "https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/traffic/clones" > /tmp/clones.json
+          
+          # Get referrers and save to file
+          curl -s -H "Authorization: token $GITHUB_TOKEN" \
+            "https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/traffic/popular/referrers" > /tmp/referrers.json
+          
+          # Get popular paths and save to file
+          curl -s -H "Authorization: token $GITHUB_TOKEN" \
+            "https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/traffic/popular/paths" > /tmp/paths.json
+          
+          # Debug: Show API responses
+          echo "Views response:"
+          cat /tmp/views.json
+          echo ""
+          echo "Clones response:"
+          cat /tmp/clones.json
+          
+          # Run Node.js script to process data
+          node << 'SCRIPT'
+          const fs = require('fs');
+          
+          const trafficFile = 'traffic-data/traffic-history.json';
+          const today = new Date().toISOString().split('T')[0];
+          
+          // Read API responses from files
+          let views = {};
+          let clones = {};
+          let referrers = [];
+          let paths = [];
+          
+          try {
+            views = JSON.parse(fs.readFileSync('/tmp/views.json', 'utf8'));
+          } catch (e) {
+            console.log('Could not parse views:', e.message);
+          }
+          
+          try {
+            clones = JSON.parse(fs.readFileSync('/tmp/clones.json', 'utf8'));
+          } catch (e) {
+            console.log('Could not parse clones:', e.message);
+          }
+          
+          try {
+            referrers = JSON.parse(fs.readFileSync('/tmp/referrers.json', 'utf8'));
+          } catch (e) {
+            console.log('Could not parse referrers:', e.message);
+          }
+          
+          try {
+            paths = JSON.parse(fs.readFileSync('/tmp/paths.json', 'utf8'));
+          } catch (e) {
+            console.log('Could not parse paths:', e.message);
+          }
+          
+          // Load existing data - THIS PRESERVES YOUR CURRENT 19 CLONES!
+          let history = { 
+            totalViews: 0, 
+            totalClones: 0, 
+            uniqueVisitors: 0,
+            uniqueCloners: 0,
+            dailyData: [],
+            lastUpdated: today,
+            startTracking: today
+          };
+          
+          if (fs.existsSync(trafficFile)) {
+            try {
+              history = JSON.parse(fs.readFileSync(trafficFile, 'utf8'));
+              console.log('Loaded existing history with', history.dailyData.length, 'days of data');
+              console.log('Existing total clones:', history.totalClones);
+            } catch (e) {
+              console.log('Creating new history file');
+            }
+          }
+          
+          // Process daily views data (adds new data, doesn't overwrite existing)
+          if (views.views && Array.isArray(views.views)) {
+            views.views.forEach(day => {
+              const date = day.timestamp.split('T')[0];
+              const existing = history.dailyData.find(d => d.date === date);
+              
+              if (existing) {
+                // Only update if new data is higher (preserves historical max)
+                existing.views = Math.max(existing.views || 0, day.count);
+                existing.uniqueVisitors = Math.max(existing.uniqueVisitors || 0, day.uniques);
+              } else {
+                history.dailyData.push({
+                  date: date,
+                  views: day.count,
+                  uniqueVisitors: day.uniques,
+                  clones: 0,
+                  uniqueCloners: 0
+                });
+              }
+            });
+          }
+          
+          // Process daily clones data (adds new data, doesn't overwrite existing)
+          if (clones.clones && Array.isArray(clones.clones)) {
+            clones.clones.forEach(day => {
+              const date = day.timestamp.split('T')[0];
+              const existing = history.dailyData.find(d => d.date === date);
+              
+              if (existing) {
+                // Only update if new data is higher (preserves historical max)
+                existing.clones = Math.max(existing.clones || 0, day.count);
+                existing.uniqueCloners = Math.max(existing.uniqueCloners || 0, day.uniques);
+              } else {
+                history.dailyData.push({
+                  date: date,
+                  views: 0,
+                  uniqueVisitors: 0,
+                  clones: day.count,
+                  uniqueCloners: day.uniques
+                });
+              }
+            });
+          }
+          
+          // Sort by date
+          history.dailyData.sort((a, b) => new Date(a.date) - new Date(b.date));
+          
+          // Calculate totals from all daily data (includes your initial 19 clones!)
+          history.totalViews = history.dailyData.reduce((sum, d) => sum + (d.views || 0), 0);
+          history.totalClones = history.dailyData.reduce((sum, d) => sum + (d.clones || 0), 0);
+          history.uniqueVisitors = history.dailyData.reduce((sum, d) => sum + (d.uniqueVisitors || 0), 0);
+          history.uniqueCloners = history.dailyData.reduce((sum, d) => sum + (d.uniqueCloners || 0), 0);
+          history.lastUpdated = today;
+          
+          // Add referrers and paths (latest snapshot)
+          if (Array.isArray(referrers) && referrers.length > 0) {
+            history.topReferrers = referrers;
+          }
+          if (Array.isArray(paths) && paths.length > 0) {
+            history.popularPaths = paths;
+          }
+          
+          // Save updated history
+          fs.writeFileSync(trafficFile, JSON.stringify(history, null, 2));
+          
+          console.log('');
+          console.log('=== Traffic Data Updated! ===');
+          console.log('Total Views:', history.totalViews);
+          console.log('Total Clones:', history.totalClones);
+          console.log('Unique Visitors:', history.uniqueVisitors);
+          console.log('Unique Cloners:', history.uniqueCloners);
+          console.log('Days tracked:', history.dailyData.length);
+          SCRIPT
+      
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add traffic-data/
+          git diff --staged --quiet || git commit -m "📊 Update traffic data [skip ci]"
+          git push
