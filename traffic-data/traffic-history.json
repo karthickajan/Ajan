@@ -44,11 +44,16 @@
     },
     {
       "date": "2025-12-27",
-      "views": 2,
+      "views": 24,
       "uniqueVisitors": 1,
-      "clones": 2,
-      "uniqueCloners": 1
+      "clones": 17,
+      "uniqueCloners": 12
     }
   ],
-  "startTracking": "2025-12-14"
+  "startTracking": "2025-12-14",
+  "totalViews": 24,
+  "totalClones": 34,
+  "uniqueVisitors": 1,
+  "uniqueCloners": 28,
+  "lastUpdated": "2025-12-28"
 }
