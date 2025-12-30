@@ -19,6 +19,15 @@
 
 ---
 
+## 📸 Preview
+
+<div align="center">
+  <img src="src/assets/aboutss.png" alt="About Section" width="45%" />
+  <img src="src/assets/contactss.png" alt="Contact Section" width="45%" />
+</div>
+
+---
+
 ## ✨ Features
 
 - 🎨 Modern, responsive design
@@ -27,6 +36,17 @@
 - 🎯 Smooth scroll animations
 - 📱 Mobile-first responsive layout
 - 🚀 Deployed on GitHub Pages
+
+## 📋 Use This as Your Portfolio Template
+
+**Want to use this for your own portfolio?** It takes ~5 minutes to customize:
+
+1. **Fork** this repository
+2. **Edit** `src/app/services/portfolio-data.service.ts` with your info
+3. **Replace** images in `src/assets/` with your photos
+4. **Deploy** to GitHub Pages
+
+👉 **[See full customization guide →](PORTFOLIO_TEMPLATE.md)**
 
 ## 🛠️ Tech Stack
 
