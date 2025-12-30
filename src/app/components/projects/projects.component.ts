@@ -53,18 +53,18 @@ export class ProjectsComponent implements OnInit, OnDestroy, AfterViewInit {
       live_project_link: "https://github.com/karthickajan/chessy"
     },
     {
-      name: "Weekend �",
-      description: "A web application for event booking and hosting that connects like-minded people. Features include real-time chat, AI-powered suggestions, secure authentication, and automatic recommendations for nearby users with shared interests. Built with Angular, Node.js, and Firebase. Note: Hosting discontinued due to infrastructure costs.",
+      name: "Weekend 📍",
+      description: "A web application for event booking and hosting that connects like-minded people. Features include real-time chat, suggestions, secure authentication, and automatic recommendations for nearby users with shared interests. Built with Angular, Node.js, AWS, and MySQL. Note: Hosting discontinued due to infrastructure costs.",
       tags: [
         { name: "Angular", color: "text-red-400" },
         { name: "Node.js", color: "text-green-400" },
-        { name: "Firebase", color: "text-yellow-400" },
+        { name: "AWS", color: "text-yellow-400" },
         { name: "Real-time Chat", color: "text-blue-400" },
-        { name: "AI/ML", color: "text-purple-400" }
+        { name: "MySQL", color: "text-purple-400" }
       ],
       image: "assets/AurGee_project.jpg",
-      source_code_link: "https://github.com/karthickajan/weekend",
-      live_project_link: "https://github.com/karthickajan/weekend"
+      source_code_link: "https://github.com/Weekend-weebee/Weekend-UI",
+      live_project_link: "https://github.com/Weekend-weebee/Weekend-UI"
     },
     // {
     //   name: "KnifeThrow 🎯",
