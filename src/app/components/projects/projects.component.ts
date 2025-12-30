@@ -40,29 +40,31 @@ export class ProjectsComponent implements OnInit, OnDestroy, AfterViewInit {
       live_project_link: "https://aurgeeherbs.com/"
     },
     {
-      name: "Chessy",
-  description: "Chess board prediction and analyser. Upload a photo of a chess board, and Chessy recognizes the board and pieces, recreates the exact position digitally, and suggests the next best move. Built with Python, Flask, YOLO, and Angular for a seamless chess experience.",
+      name: "Chessy ♘",
+      description: "Chess board prediction and analyser. Upload a photo of a chess board, and Chessy recognizes the board and pieces, recreates the exact position digitally, and suggests the next best move. Built with Python, Flask, YOLO, and Angular for a seamless chess experience.",
       tags: [
         { name: "Python", color: "text-blue-400" },
         { name: "OpenCV", color: "text-green-400" },
         { name: "AI/ML", color: "text-purple-400" },
         { name: "Chess", color: "text-orange-400" }
       ],
-      image: "assets/AurGee_project.jpg",
+      image: "assets/chessy-preview.png",
       source_code_link: "https://github.com/karthickajan/chessy",
       live_project_link: "https://github.com/karthickajan/chessy"
     },
     {
-      name: "Enterprise API Tester 🌐",
-      description: "Comprehensive API testing tool with support for all major HTTP methods, authentication, and CORS-friendly proxy. Features include request import/export, real-world samples, and local storage for data persistence. Built with Next.js, and TypeScript for optimal performance.",
+      name: "Weekend �",
+      description: "A web application for event booking and hosting that connects like-minded people. Features include real-time chat, AI-powered suggestions, secure authentication, and automatic recommendations for nearby users with shared interests. Built with Angular, Node.js, and Firebase. Note: Hosting discontinued due to infrastructure costs.",
       tags: [
-        { name: "Typescript", color: "text-blue-400" },
-        { name: "Tailwind CSS", color: "text-green-400" },
-        { name: "Next.js", color: "text-pink-400" }
+        { name: "Angular", color: "text-red-400" },
+        { name: "Node.js", color: "text-green-400" },
+        { name: "Firebase", color: "text-yellow-400" },
+        { name: "Real-time Chat", color: "text-blue-400" },
+        { name: "AI/ML", color: "text-purple-400" }
       ],
       image: "assets/AurGee_project.jpg",
-      source_code_link: "https://github.com/janaPM/AurGee",
-      live_project_link: "https://aurgeeherbs.com/"
+      source_code_link: "https://github.com/karthickajan/weekend",
+      live_project_link: "https://github.com/karthickajan/weekend"
     },
     // {
     //   name: "KnifeThrow 🎯",
