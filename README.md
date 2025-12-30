@@ -1,114 +1,226 @@
-# 🚀 Developer Portfolio Template – Angular + Three.js# 🚀 Developer Portfolio Template – Angular + Three.js# 🚀 Developer Portfolio Template – Angular + Three.js# 🚀 Karthick Ajan - Portfolio
+# 🚀 Karthick Ajan - Portfolio# 🚀 Developer Portfolio Template – Angular + Three.js# 🚀 Developer Portfolio Template – Angular + Three.js# 🚀 Developer Portfolio Template – Angular + Three.js# 🚀 Karthick Ajan - Portfolio
 
 
 
-A modern, production-ready portfolio template with 3D graphics, smooth animations, and easy customization. **Clone, customize, deploy in 5 minutes.**
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://karthickajan.github.io/Ajan/)
+
+[![GitHub Stars](https://img.shields.io/github/stars/karthickajan/Ajan?style=for-the-badge&logo=github)](https://github.com/karthickajan/Ajan/stargazers)
+
+[![GitHub Forks](https://img.shields.io/github/forks/karthickajan/Ajan?style=for-the-badge&logo=github)](https://github.com/karthickajan/Ajan/network/members)A modern, production-ready portfolio template with 3D graphics, smooth animations, and easy customization. **Clone, customize, deploy in 5 minutes.**
+
+[![GitHub Issues](https://img.shields.io/github/issues/karthickajan/Ajan?style=for-the-badge&logo=github)](https://github.com/karthickajan/Ajan/issues)
 
 
+
+## 📊 Repository Stats
 
 <p align="center">A modern, production-ready portfolio template with 3D graphics, smooth animations, and easy customization. **Clone, customize, deploy in 5 minutes.**
 
-  <a href="https://karthickajan.github.io/Ajan/">
+| Metric | Count |
 
-    <img src="https://img.shields.io/badge/🔗_Live_Demo-Visit_Site-blue?style=for-the-badge" alt="Live Demo">
+|--------|-------|  <a href="https://karthickajan.github.io/Ajan/">
 
-  </a>
+| 👀 Views | <!-- VIEWS_COUNT -->47<!-- /VIEWS_COUNT --> |
+
+| 📥 Clones | <!-- CLONES_COUNT -->46<!-- /CLONES_COUNT --> |    <img src="https://img.shields.io/badge/🔗_Live_Demo-Visit_Site-blue?style=for-the-badge" alt="Live Demo">
+
+| ⭐ Stars | ![Stars](https://img.shields.io/github/stars/karthickajan/Ajan?style=flat-square) |
+
+| 🍴 Forks | ![Forks](https://img.shields.io/github/forks/karthickajan/Ajan?style=flat-square) |  </a>
+
+| 👁️ Watchers | ![Watchers](https://img.shields.io/github/watchers/karthickajan/Ajan?style=flat-square) |
 
 </p><p align="center">A modern, production-ready portfolio template with 3D graphics, smooth animations, and easy customization. Clone, customize, deploy in 5 minutes.[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://karthickajan.github.io/Ajan/)
 
-
-
-<p align="center">  <a href="https://karthickajan.github.io/Ajan/">
-
-  <img src="https://img.shields.io/badge/Lighthouse-90+-brightgreen?style=flat-square&logo=lighthouse" alt="Lighthouse Score">
-
-  <img src="https://img.shields.io/github/stars/karthickajan/Ajan?style=flat-square" alt="Stars">    <img src="https://img.shields.io/badge/🔗_Live_Demo-Visit_Site-blue?style=for-the-badge" alt="Live Demo">[![GitHub Stars](https://img.shields.io/github/stars/karthickajan/Ajan?style=for-the-badge&logo=github)](https://github.com/karthickajan/Ajan/stargazers)
-
-  <img src="https://img.shields.io/github/forks/karthickajan/Ajan?style=flat-square" alt="Forks">
-
-  <img src="https://img.shields.io/badge/Angular-17-DD0031?style=flat-square&logo=angular" alt="Angular 17">  </a>
-
-  <img src="https://img.shields.io/badge/Three.js-3D-black?style=flat-square&logo=three.js" alt="Three.js">
-
-</p></p><p align="center">[![GitHub Forks](https://img.shields.io/github/forks/karthickajan/Ajan?style=for-the-badge&logo=github)](https://github.com/karthickajan/Ajan/network/members)
+> 📈 Traffic data updated daily via GitHub Actions. Full history: [traffic-history.json](traffic-data/traffic-history.json)
 
 
 
 ---
 
+<p align="center">  <a href="https://karthickajan.github.io/Ajan/">
 
+## ✨ Features
+
+  <img src="https://img.shields.io/badge/Lighthouse-90+-brightgreen?style=flat-square&logo=lighthouse" alt="Lighthouse Score">
+
+- 🎨 Modern, responsive design
+
+- 🌍 Interactive 3D Earth globe  <img src="https://img.shields.io/github/stars/karthickajan/Ajan?style=flat-square" alt="Stars">    <img src="https://img.shields.io/badge/🔗_Live_Demo-Visit_Site-blue?style=for-the-badge" alt="Live Demo">[![GitHub Stars](https://img.shields.io/github/stars/karthickajan/Ajan?style=for-the-badge&logo=github)](https://github.com/karthickajan/Ajan/stargazers)
+
+- 📧 Contact form with EmailJS integration
+
+- 🎯 Smooth scroll animations  <img src="https://img.shields.io/github/forks/karthickajan/Ajan?style=flat-square" alt="Forks">
+
+- 📱 Mobile-first responsive layout
+
+- 🚀 Deployed on GitHub Pages  <img src="https://img.shields.io/badge/Angular-17-DD0031?style=flat-square&logo=angular" alt="Angular 17">  </a>
+
+
+
+## 🛠️ Tech Stack  <img src="https://img.shields.io/badge/Three.js-3D-black?style=flat-square&logo=three.js" alt="Three.js">
+
+
+
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)</p></p><p align="center">[![GitHub Forks](https://img.shields.io/github/forks/karthickajan/Ajan?style=for-the-badge&logo=github)](https://github.com/karthickajan/Ajan/network/members)
+
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+
+![Three.js](https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=three.js&logoColor=white)
+
+![SCSS](https://img.shields.io/badge/SCSS-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+
+---
+
+---
+
+
+
+## 🚀 Getting Started
 
 ## 📊 Repository Stats<p align="center">  <img src="docs/assets/preview.gif" alt="Portfolio Preview" width="800">[![GitHub Issues](https://img.shields.io/github/issues/karthickajan/Ajan?style=for-the-badge&logo=github)](https://github.com/karthickajan/Ajan/issues)
 
-
-
-| Metric | Count |  <img src="https://img.shields.io/badge/Lighthouse-90+-brightgreen?style=flat-square&logo=lighthouse" alt="Lighthouse Score">
-
-|--------|-------|
-
-| 👀 Views | <!-- VIEWS_COUNT -->47<!-- /VIEWS_COUNT --> |  <img src="https://img.shields.io/github/stars/karthickajan/Ajan?style=flat-square" alt="Stars"></p>
-
-| 📥 Clones | <!-- CLONES_COUNT -->46<!-- /CLONES_COUNT --> |
-
-| ⭐ Stars | ![Stars](https://img.shields.io/github/stars/karthickajan/Ajan?style=flat-square) |  <img src="https://img.shields.io/github/forks/karthickajan/Ajan?style=flat-square" alt="Forks">
-
-| 🍴 Forks | ![Forks](https://img.shields.io/github/forks/karthickajan/Ajan?style=flat-square) |
-
-| 👁️ Watchers | ![Watchers](https://img.shields.io/github/watchers/karthickajan/Ajan?style=flat-square) |  <img src="https://img.shields.io/badge/Angular-17-DD0031?style=flat-square&logo=angular" alt="Angular 17">## 📊 Repository Stats
+### Prerequisites
 
 
 
-> 📈 Traffic data updated daily via GitHub Actions. Full history: [traffic-history.json](traffic-data/traffic-history.json)  <img src="https://img.shields.io/badge/Three.js-3D-black?style=flat-square&logo=three.js" alt="Three.js">
+- **Node.js** (v18 or higher)
+
+- **Angular CLI** (v17 or higher): `npm install -g @angular/cli`| Metric | Count |  <img src="https://img.shields.io/badge/Lighthouse-90+-brightgreen?style=flat-square&logo=lighthouse" alt="Lighthouse Score">
 
 
+
+### Installation|--------|-------|
+
+
+
+1. **Clone the repository**| 👀 Views | <!-- VIEWS_COUNT -->47<!-- /VIEWS_COUNT --> |  <img src="https://img.shields.io/github/stars/karthickajan/Ajan?style=flat-square" alt="Stars"></p>
+
+   ```bash
+
+   git clone https://github.com/karthickajan/Ajan.git| 📥 Clones | <!-- CLONES_COUNT -->46<!-- /CLONES_COUNT --> |
+
+   cd Ajan
+
+   ```| ⭐ Stars | ![Stars](https://img.shields.io/github/stars/karthickajan/Ajan?style=flat-square) |  <img src="https://img.shields.io/github/forks/karthickajan/Ajan?style=flat-square" alt="Forks">
+
+
+
+2. **Install dependencies** (includes Three.js for 3D graphics)| 🍴 Forks | ![Forks](https://img.shields.io/github/forks/karthickajan/Ajan?style=flat-square) |
+
+   ```bash
+
+   npm install| 👁️ Watchers | ![Watchers](https://img.shields.io/github/watchers/karthickajan/Ajan?style=flat-square) |  <img src="https://img.shields.io/badge/Angular-17-DD0031?style=flat-square&logo=angular" alt="Angular 17">## 📊 Repository Stats
+
+   ```
+
+
+
+3. **Run the development server**
+
+   ```bash> 📈 Traffic data updated daily via GitHub Actions. Full history: [traffic-history.json](traffic-data/traffic-history.json)  <img src="https://img.shields.io/badge/Three.js-3D-black?style=flat-square&logo=three.js" alt="Three.js">
+
+   ng serve
+
+   ```
+
+   Navigate to `http://localhost:4200/`
 
 ---</p><p align="center">
 
+### Build for Production
 
 
-## ✨ Features at a Glance
+
+```bash
+
+ng build## ✨ Features at a Glance
+
+```
 
 
+
+The build artifacts will be stored in the `dist/` directory.
 
 | Feature | Description |### ✨ Features at a Glance  <a href="https://karthickajan.github.io/Ajan/">🔗 Live Demo</a> •| Metric | Count |
 
+---
+
 |---------|-------------|
+
+## 📁 Project Structure
 
 | 🌍 **3D Earth Globe** | Interactive Three.js planet you can spin |
 
-| 💻 **3D Computer Model** | Eye-catching animated hero section |
+```
 
-| 📧 **Contact Form** | EmailJS integration – no backend needed || Feature | Description |  <a href="#-quick-start-5-minutes">⚡ Quick Start</a> •|--------|-------|
+src/| 💻 **3D Computer Model** | Eye-catching animated hero section |
 
-| 📱 **Responsive** | Mobile-first, works on all devices |
+├── app/components/
 
-| ⚡ **Optimized** | Lazy loading, code splitting, fast load ||---------|-------------|
+│   ├── hero/              # Hero section| 📧 **Contact Form** | EmailJS integration – no backend needed || Feature | Description |  <a href="#-quick-start-5-minutes">⚡ Quick Start</a> •|--------|-------|
+
+│   ├── computer-canvas/   # 3D Computer model (Three.js)
+
+│   ├── planet-canvas/     # 3D Earth globe (Three.js)| 📱 **Responsive** | Mobile-first, works on all devices |
+
+│   ├── about/             # About section
+
+│   ├── experience/        # Work experience| ⚡ **Optimized** | Lazy loading, code splitting, fast load ||---------|-------------|
+
+│   ├── education/         # Education timeline
+
+│   ├── skills/            # Skills showcase
+
+│   ├── projects/          # Project cards
+
+│   └── contact/           # Contact form (EmailJS)---| 🌍 **3D Earth Globe** | Interactive Three.js planet you can spin |  <a href="#-use-as-template">📋 Use as Template</a>| 👀 Views | <!-- VIEWS_COUNT -->24<!-- /VIEWS_COUNT --> |
+
+├── assets/
+
+│   ├── desktop_pc/        # 3D Computer model files
+
+│   └── planet/            # 3D Earth model files
+
+└── styles.scss## 🤔 Why This Portfolio?| 💻 **3D Computer Model** | Eye-catching animated hero section |
+
+```
 
 
 
----| 🌍 **3D Earth Globe** | Interactive Three.js planet you can spin |  <a href="#-use-as-template">📋 Use as Template</a>| 👀 Views | <!-- VIEWS_COUNT -->24<!-- /VIEWS_COUNT --> |
-
-
-
-## 🤔 Why This Portfolio?| 💻 **3D Computer Model** | Eye-catching animated hero section |
-
-
+---
 
 Most developer portfolios are either:| 📧 **Contact Form** | EmailJS integration – no backend needed |</p>| 📥 Clones | <!-- CLONES_COUNT -->34<!-- /CLONES_COUNT --> |
 
+## 🧪 Running Tests
+
 - ❌ **Overdesigned** – Heavy animations that kill performance
 
-- ❌ **Hard to customize** – Buried in complex config files  | 📱 **Responsive** | Mobile-first, works on all devices |
+```bash
+
+ng test- ❌ **Hard to customize** – Buried in complex config files  | 📱 **Responsive** | Mobile-first, works on all devices |
+
+```
 
 - ❌ **Too generic** – Cookie-cutter templates that don't stand out
 
+---
+
 | ⚡ **Optimized** | Lazy loading, code splitting, fast load || ⭐ Stars | ![Stars](https://img.shields.io/github/stars/karthickajan/Ajan?style=flat-square) |
+
+## 📄 License
 
 **This portfolio solves all three:**
 
+This project is open source and available under the [MIT License](LICENSE).
 
+
+
+---
 
 | Problem | Solution |
+
+<p align="center">Made with ❤️ by Karthick Ajan</p>
 
 |---------|----------|---<p align="center">| 🍴 Forks | ![Forks](https://img.shields.io/github/forks/karthickajan/Ajan?style=flat-square) |
 
