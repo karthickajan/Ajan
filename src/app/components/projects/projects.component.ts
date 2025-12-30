@@ -48,13 +48,13 @@ export class ProjectsComponent implements OnInit, OnDestroy, AfterViewInit {
         { name: "AI/ML", color: "text-purple-400" },
         { name: "Chess", color: "text-orange-400" }
       ],
-      image: "assets/chessy-preview.png",
+      image: "assets/chessyss.png",
       source_code_link: "https://github.com/karthickajan/chessy",
-      live_project_link: "https://github.com/karthickajan/chessy"
+      live_project_link: "https://karthickajan.github.io/ChessyUI/"
     },
     {
       name: "Weekend 📍",
-      description: "A web application for event booking and hosting that connects like-minded people. Features include real-time chat, suggestions, secure authentication, and automatic recommendations for nearby users with shared interests. Built with Angular, Node.js, AWS, and MySQL. Note: Hosting discontinued due to infrastructure costs.",
+      description: "A web application for event booking and hosting that connects like-minded people. Features real-time chat, suggestions, secure authentication, and automatic recommendations for nearby users with shared interests. Built with Angular, Node.js, AWS, and MySQL.",
       tags: [
         { name: "Angular", color: "text-red-400" },
         { name: "Node.js", color: "text-green-400" },
@@ -62,7 +62,7 @@ export class ProjectsComponent implements OnInit, OnDestroy, AfterViewInit {
         { name: "Real-time Chat", color: "text-blue-400" },
         { name: "MySQL", color: "text-purple-400" }
       ],
-      image: "assets/AurGee_project.jpg",
+      image: "assets/weekendss.png",
       source_code_link: "https://github.com/Weekend-weebee/Weekend-UI",
       live_project_link: "https://github.com/Weekend-weebee/Weekend-UI"
     },
