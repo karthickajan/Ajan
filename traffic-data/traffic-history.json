@@ -62,12 +62,26 @@
       "uniqueVisitors": 3,
       "clones": 7,
       "uniqueCloners": 6
+    },
+    {
+      "date": "2025-12-30",
+      "views": 42,
+      "uniqueVisitors": 3,
+      "clones": 42,
+      "uniqueCloners": 27
+    },
+    {
+      "date": "2025-12-31",
+      "views": 15,
+      "uniqueVisitors": 2,
+      "clones": 24,
+      "uniqueCloners": 17
     }
   ],
   "startTracking": "2025-12-14",
-  "totalViews": 47,
-  "totalClones": 46,
-  "uniqueVisitors": 6,
-  "uniqueCloners": 38,
-  "lastUpdated": "2025-12-30"
+  "totalViews": 104,
+  "totalClones": 112,
+  "uniqueVisitors": 11,
+  "uniqueCloners": 82,
+  "lastUpdated": "2025-12-31"
 }
