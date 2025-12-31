@@ -21,6 +21,7 @@ export class ComputerCanvasComponent implements AfterViewInit, OnDestroy {
   private controls!: OrbitControls;
   private animationId!: number;
   private isMobile: boolean = false;
+  private progressInterval: any;
   
   // Loading state
   isLoading: boolean = true;
@@ -31,6 +32,7 @@ export class ComputerCanvasComponent implements AfterViewInit, OnDestroy {
   ngAfterViewInit() {
     if (isPlatformBrowser(this.platformId)) {
       this.checkMobile();
+      this.startFakeProgress();
       setTimeout(() => this.init(), 100);
     }
   }
@@ -45,6 +47,25 @@ export class ComputerCanvasComponent implements AfterViewInit, OnDestroy {
     };
     
     mediaQuery.addEventListener("change", handleMediaQueryChange);
+  }
+
+  // Smooth fake progress animation
+  private startFakeProgress() {
+    this.loadingProgress = 0;
+    this.progressInterval = setInterval(() => {
+      if (this.loadingProgress < 90) {
+        // Slow down as it gets higher
+        const increment = Math.max(1, Math.floor((90 - this.loadingProgress) / 10));
+        this.loadingProgress = Math.min(this.loadingProgress + increment, 90);
+      }
+    }, 100);
+  }
+
+  private completeProgress() {
+    if (this.progressInterval) {
+      clearInterval(this.progressInterval);
+    }
+    this.loadingProgress = 100;
   }
 
   private init() {
@@ -139,18 +160,16 @@ export class ComputerCanvasComponent implements AfterViewInit, OnDestroy {
         
         this.scene.add(this.computer);
         
-        // Hide loader
+        // Complete progress and hide loader
+        this.completeProgress();
         setTimeout(() => {
           this.isLoading = false;
-        }, 500);
+        }, 300);
       },
-      (progress) => {
-        if (progress.total > 0 && progress.loaded <= progress.total) {
-          this.loadingProgress = Math.min(Math.round((progress.loaded / progress.total) * 100), 100);
-        }
-      },
+      undefined, // Don't use the unreliable progress callback
       (error) => {
         console.error('Error loading GLTF model:', error);
+        this.completeProgress();
         this.isLoading = false;
         // Fallback to basic geometry if model fails to load
         this.createFallbackLaptop();
