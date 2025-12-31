@@ -145,8 +145,8 @@ export class ComputerCanvasComponent implements AfterViewInit, OnDestroy {
         }, 500);
       },
       (progress) => {
-        if (progress.total > 0) {
-          this.loadingProgress = Math.round((progress.loaded / progress.total) * 100);
+        if (progress.total > 0 && progress.loaded <= progress.total) {
+          this.loadingProgress = Math.min(Math.round((progress.loaded / progress.total) * 100), 100);
         }
       },
       (error) => {
