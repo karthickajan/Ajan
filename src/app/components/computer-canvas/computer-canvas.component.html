@@ -1,2 +1,17 @@
 <div #canvasContainer class="computer-canvas-container">
+  <!-- Loading Overlay -->
+  <div class="loader-overlay" *ngIf="isLoading">
+    <div class="loader-content">
+      <div class="loader-spinner"></div>
+      <p class="loader-text">Loading...</p>
+      <p class="loader-progress">{{ loadingProgress }}%</p>
+    </div>
+  </div>
+  
+  <!-- Scroll/Rotate Indicator -->
+  <div class="scroll-indicator" *ngIf="!isLoading">
+    <div class="mouse-icon">
+      <div class="scroll-dot"></div>
+    </div>
+  </div>
 </div>

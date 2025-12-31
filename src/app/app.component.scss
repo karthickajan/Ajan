@@ -26,22 +26,48 @@
   }
 }
 
-// Computer Canvas Section Styling
-.computer-canvas-section {
-  height: 100vh;
+// Hero + Computer Canvas Wrapper - Shared Background
+.hero-canvas-wrapper {
   width: 100%;
-  background: transparent;
   position: relative;
-  overflow: hidden;
-  margin-top: -280px; // Remove the unwanted top space
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  margin-top: -70px; // Extend behind fixed header
+  padding-top: 70px; // Compensate for the negative margin
+  
+  // Shared background
+  background: #050816;
+  background-image: url('/assets/herobg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  // Dark overlay - reduced opacity for brighter look
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(5, 8, 22, 0.2);
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  app-hero, app-computer-canvas {
+    position: relative;
+    z-index: 2;
+  }
   
   app-computer-canvas {
-    width: 100%;
-    height: 100%;
-    display: block;
+    min-height: 600px;
+    margin-top: -230px;
+    
+    @media (max-width: 768px) {
+      min-height: 350px;
+      margin-top: -30px;
+    }
   }
 }
 

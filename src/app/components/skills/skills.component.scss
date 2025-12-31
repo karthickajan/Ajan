@@ -1,6 +1,8 @@
 // Skills Section - Honeycomb Hexagon Design matching React version
 .skills-section {
   width: 100%;
+  max-width: 100vw; // Prevent overflow
+  overflow-x: hidden; // Hide any horizontal overflow
   background: #050816; // Dark background
   display: flex;
   align-items: center;
@@ -17,6 +19,7 @@
     flex-direction: column;
     padding: 0px;
     margin: 0 auto;
+    overflow-x: hidden; // Also hide overflow in container
 
     @media (min-width: 640px) {
       padding: 4rem;

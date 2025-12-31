@@ -7,7 +7,7 @@ This is a professional Angular portfolio application that replicates the EXACT d
 
 **Target Repository**: https://github.com/sunnypatell/react-threejs-portfolio  
 **Reference Website**: https://www.sunnypatel.net/  
-**Development Note: Always use port 4202 for testing (`ng serve --port 4202`)**
+**Development Note: Always use port 4200 for testing (`ng serve --port 4200`)**
 
 ## Design Reference - Sunny Patel's Portfolio
 **PRIMARY GOAL: Create an exact replica of https://www.sunnypatel.net/**

@@ -1,5 +1,5 @@
 import { Component, ElementRef, AfterViewInit, OnDestroy, ViewChild, PLATFORM_ID, Inject } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
+import { isPlatformBrowser, CommonModule } from '@angular/common';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
@@ -7,6 +7,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 @Component({
   selector: 'app-computer-canvas',
   standalone: true,
+  imports: [CommonModule],
   templateUrl: './computer-canvas.component.html',
   styleUrl: './computer-canvas.component.scss'
 })
@@ -20,6 +21,10 @@ export class ComputerCanvasComponent implements AfterViewInit, OnDestroy {
   private controls!: OrbitControls;
   private animationId!: number;
   private isMobile: boolean = false;
+  
+  // Loading state
+  isLoading: boolean = true;
+  loadingProgress: number = 0;
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
@@ -50,31 +55,32 @@ export class ComputerCanvasComponent implements AfterViewInit, OnDestroy {
 
     // Camera - exact same as JSX
     this.camera = new THREE.PerspectiveCamera(
-      this.isMobile ? 50 : 25,
+      this.isMobile ? 35 : 18, // Smaller FOV on mobile = bigger computer
       container.clientWidth / container.clientHeight,
       0.1,
       1000
     );
     
     if (this.isMobile) {
-      this.camera.position.set(0, 0, 20);
+      this.camera.position.set(0, 0, 14); // Closer camera on mobile
     } else {
-      this.camera.position.set(20, 3, 5);
+      this.camera.position.set(20, 5, 5);
     }
 
     // Renderer - enhanced settings for better lighting
     this.renderer = new THREE.WebGLRenderer({ 
       antialias: true, 
       alpha: true,
-      preserveDrawingBuffer: true 
+      preserveDrawingBuffer: true
     });
+    this.renderer.setClearColor(0x000000, 0);
     this.renderer.setSize(container.clientWidth, container.clientHeight);
     this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     this.renderer.shadowMap.enabled = true;
     this.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
     this.renderer.outputColorSpace = THREE.SRGBColorSpace;
     this.renderer.toneMapping = THREE.ACESFilmicToneMapping;
-    this.renderer.toneMappingExposure = 1.5; // Increase exposure for brighter rendering
+    this.renderer.toneMappingExposure = 1.5;
     container.appendChild(this.renderer.domElement);
 
     this.loadComputerModel();
@@ -96,11 +102,11 @@ export class ComputerCanvasComponent implements AfterViewInit, OnDestroy {
         // Apply exact same settings as JSX
         if (this.isMobile) {
           this.computer.scale.setScalar(0.75);
-          this.computer.position.set(0, -3, 0);
+          this.computer.position.set(0, -2.5, 0); // Moved up
           this.computer.rotation.set(0, 0, 0);
         } else {
           this.computer.scale.setScalar(0.75);
-          this.computer.position.set(0, -3.25, -1.5);
+          this.computer.position.set(0, -2.25, -1.5); // Moved up from -3.25 to show desk
           this.computer.rotation.set(-0.01, -0.2, -0.1);
         }
         
@@ -132,12 +138,20 @@ export class ComputerCanvasComponent implements AfterViewInit, OnDestroy {
         });
         
         this.scene.add(this.computer);
+        
+        // Hide loader
+        setTimeout(() => {
+          this.isLoading = false;
+        }, 500);
       },
       (progress) => {
-        console.log('Loading progress:', (progress.loaded / progress.total * 100) + '%');
+        if (progress.total > 0) {
+          this.loadingProgress = Math.round((progress.loaded / progress.total) * 100);
+        }
       },
       (error) => {
         console.error('Error loading GLTF model:', error);
+        this.isLoading = false;
         // Fallback to basic geometry if model fails to load
         this.createFallbackLaptop();
       }

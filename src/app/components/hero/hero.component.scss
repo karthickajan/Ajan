@@ -1,43 +1,23 @@
 /* Hero section styles - simplified */
 
 .hero-section {
-  // height: 100vh;
-  background: #050816;
+  background: transparent; // Background handled by parent wrapper
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  // min-height: 100vh; // Ensure full height on all devices
-  
-  /* Background image like reference website */
-  background-image: url('/assets/herobg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   
   @media (max-width: 768px) {
     padding: 1rem;
-    // min-height: 90vh; // Slightly reduced for mobile
+    padding-top: 60px;
   }
   
   @media (max-width: 480px) {
     padding: 0.5rem;
-    // min-height: 85vh;
+    padding-top: 50px;
   }
-  
-  /* Dark overlay to ensure text readability */
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(5, 8, 22, 0.8);
-    z-index: 1;
-  }
-  
+
   /* Ensure content is above overlay */
   .hero-container {
     position: relative;
@@ -114,9 +94,21 @@
           margin-bottom: 1rem;
           line-height: 1.2;
           font-family: 'Poppins', sans-serif;
+          letter-spacing: -0.02em;
+          // Simulate extra boldness with subtle text-shadow
+          text-shadow: 
+            0.5px 0 0 currentColor,
+            -0.5px 0 0 currentColor,
+            0 0.5px 0 currentColor,
+            0 -0.5px 0 currentColor;
           
           .name-highlight {
             color: #915eff;
+            text-shadow: 
+              0.5px 0 0 #915eff,
+              -0.5px 0 0 #915eff,
+              0 0.5px 0 #915eff,
+              0 -0.5px 0 #915eff;
           }
           
           .wave-emoji {
