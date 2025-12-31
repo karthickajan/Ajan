@@ -21,6 +21,7 @@ export class ContactComponent implements OnInit, AfterViewInit {
   isFormSubmitted = false;
   isLoading = false;
   showSuccessPopup = false;
+  showErrorPopup = false;
 
   constructor(
     private fb: FormBuilder,
@@ -119,7 +120,7 @@ export class ContactComponent implements OnInit, AfterViewInit {
           // Auto-hide popup after 4 seconds
           setTimeout(() => {
             this.showSuccessPopup = false;
-          }, 4000);
+          }, 7000);
 
           this.contactForm.reset();
           this.isFormSubmitted = false;
@@ -127,7 +128,11 @@ export class ContactComponent implements OnInit, AfterViewInit {
         .catch((error) => {
           console.error('Failed to send email:', error);
           this.isLoading = false;
-          alert('Failed to send message. Please try again later.');
+          // Show error popup for CORS/network issues
+          this.showErrorPopup = true;
+          setTimeout(() => {
+            this.showErrorPopup = false;
+          }, 7000);
         });
     }
   }
