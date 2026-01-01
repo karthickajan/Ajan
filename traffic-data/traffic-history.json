@@ -15,6 +15,20 @@
       "uniqueCloners": 9
     },
     {
+      "date": "2025-12-17",
+      "views": 0,
+      "uniqueVisitors": 0,
+      "clones": 0,
+      "uniqueCloners": 0
+    },
+    {
+      "date": "2025-12-18",
+      "views": 0,
+      "uniqueVisitors": 0,
+      "clones": 0,
+      "uniqueCloners": 0
+    },
+    {
       "date": "2025-12-19",
       "views": 0,
       "uniqueVisitors": 0,
@@ -36,11 +50,39 @@
       "uniqueCloners": 1
     },
     {
+      "date": "2025-12-22",
+      "views": 0,
+      "uniqueVisitors": 0,
+      "clones": 0,
+      "uniqueCloners": 0
+    },
+    {
+      "date": "2025-12-23",
+      "views": 0,
+      "uniqueVisitors": 0,
+      "clones": 0,
+      "uniqueCloners": 0
+    },
+    {
       "date": "2025-12-24",
       "views": 0,
       "uniqueVisitors": 0,
       "clones": 1,
       "uniqueCloners": 1
+    },
+    {
+      "date": "2025-12-25",
+      "views": 0,
+      "uniqueVisitors": 0,
+      "clones": 0,
+      "uniqueCloners": 0
+    },
+    {
+      "date": "2025-12-26",
+      "views": 0,
+      "uniqueVisitors": 0,
+      "clones": 0,
+      "uniqueCloners": 0
     },
     {
       "date": "2025-12-27",
@@ -83,5 +125,74 @@
   "totalClones": 112,
   "uniqueVisitors": 11,
   "uniqueCloners": 82,
-  "lastUpdated": "2025-12-31"
+  "lastUpdated": "2026-01-01",
+  "topReferrers": [
+    {
+      "referrer": "github.com",
+      "count": 13,
+      "uniques": 2
+    }
+  ],
+  "popularPaths": [
+    {
+      "path": "/karthickajan/Ajan",
+      "title": "karthickajan/Ajan: portfolio",
+      "count": 56,
+      "uniques": 6
+    },
+    {
+      "path": "/karthickajan/Ajan/blob/main/traffic-data/traffic-history.json",
+      "title": "Ajan/traffic-data/traffic-history.json at main · karthickajan/Ajan · GitHub",
+      "count": 11,
+      "uniques": 4
+    },
+    {
+      "path": "/karthickajan/Ajan/pulse",
+      "title": "Pulse · karthickajan/Ajan",
+      "count": 5,
+      "uniques": 1
+    },
+    {
+      "path": "/karthickajan/Ajan/graphs/traffic",
+      "title": "Traffic · karthickajan/Ajan",
+      "count": 4,
+      "uniques": 1
+    },
+    {
+      "path": "/karthickajan/Ajan/actions/workflows/track-traffic.yml",
+      "title": "Track GitHub Traffic · Workflow runs · karthickajan/Ajan",
+      "count": 3,
+      "uniques": 1
+    },
+    {
+      "path": "/karthickajan/Ajan/stargazers",
+      "title": "Stargazers · karthickajan/Ajan",
+      "count": 2,
+      "uniques": 1
+    },
+    {
+      "path": "/karthickajan/Ajan/actions",
+      "title": "Workflow runs · karthickajan/Ajan",
+      "count": 1,
+      "uniques": 1
+    },
+    {
+      "path": "/karthickajan/Ajan/actions/runs/20541930046",
+      "title": "Track GitHub Traffic · karthickajan/Ajan@f6aecc0",
+      "count": 1,
+      "uniques": 1
+    },
+    {
+      "path": "/karthickajan/Ajan/actions/runs/20541930046/job/59007405256",
+      "title": "Track GitHub Traffic · karthickajan/Ajan@f6aecc0",
+      "count": 1,
+      "uniques": 1
+    },
+    {
+      "path": "/karthickajan/Ajan/blob/main/src/assets/aboutss.png",
+      "title": "Ajan/src/assets/aboutss.png at main · karthickajan/Ajan",
+      "count": 1,
+      "uniques": 1
+    }
+  ]
 }
