@@ -118,14 +118,21 @@
       "uniqueVisitors": 7,
       "clones": 49,
       "uniqueCloners": 32
+    },
+    {
+      "date": "2026-01-01",
+      "views": 1,
+      "uniqueVisitors": 1,
+      "clones": 10,
+      "uniqueCloners": 8
     }
   ],
   "startTracking": "2025-12-14",
-  "totalViews": 117,
-  "totalClones": 137,
-  "uniqueVisitors": 16,
-  "uniqueCloners": 97,
-  "lastUpdated": "2026-01-02",
+  "totalViews": 118,
+  "totalClones": 147,
+  "uniqueVisitors": 17,
+  "uniqueCloners": 105,
+  "lastUpdated": "2026-01-03",
   "topReferrers": [
     {
       "referrer": "github.com",
@@ -142,8 +149,8 @@
     {
       "path": "/karthickajan/Ajan",
       "title": "karthickajan/Ajan: portfolio",
-      "count": 68,
-      "uniques": 12
+      "count": 69,
+      "uniques": 13
     },
     {
       "path": "/karthickajan/Ajan/blob/main/traffic-data/traffic-history.json",
