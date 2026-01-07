@@ -146,18 +146,25 @@
       "uniqueVisitors": 3,
       "clones": 8,
       "uniqueCloners": 7
+    },
+    {
+      "date": "2026-01-05",
+      "views": 15,
+      "uniqueVisitors": 3,
+      "clones": 6,
+      "uniqueCloners": 5
     }
   ],
   "startTracking": "2025-12-14",
-  "totalViews": 132,
-  "totalClones": 168,
-  "uniqueVisitors": 23,
-  "uniqueCloners": 124,
-  "lastUpdated": "2026-01-06",
+  "totalViews": 147,
+  "totalClones": 174,
+  "uniqueVisitors": 26,
+  "uniqueCloners": 129,
+  "lastUpdated": "2026-01-07",
   "topReferrers": [
     {
       "referrer": "github.com",
-      "count": 19,
+      "count": 24,
       "uniques": 3
     },
     {
@@ -170,8 +177,8 @@
     {
       "path": "/karthickajan/Ajan",
       "title": "karthickajan/Ajan: portfolio",
-      "count": 80,
-      "uniques": 18
+      "count": 91,
+      "uniques": 20
     },
     {
       "path": "/karthickajan/Ajan/blob/main/traffic-data/traffic-history.json",
@@ -182,8 +189,8 @@
     {
       "path": "/karthickajan/Ajan/pulse",
       "title": "Pulse · karthickajan/Ajan · GitHub",
-      "count": 9,
-      "uniques": 3
+      "count": 10,
+      "uniques": 4
     },
     {
       "path": "/karthickajan/Ajan/commits/main",
@@ -210,6 +217,12 @@
       "uniques": 2
     },
     {
+      "path": "/karthickajan/Ajan/graphs/contributors",
+      "title": "Contributors to karthickajan/Ajan",
+      "count": 2,
+      "uniques": 2
+    },
+    {
       "path": "/karthickajan/Ajan/stargazers",
       "title": "Stargazers · karthickajan/Ajan",
       "count": 2,
@@ -218,12 +231,6 @@
     {
       "path": "/karthickajan/Ajan/actions",
       "title": "Workflow runs · karthickajan/Ajan",
-      "count": 1,
-      "uniques": 1
-    },
-    {
-      "path": "/karthickajan/Ajan/actions/runs/20541930046",
-      "title": "Track GitHub Traffic · karthickajan/Ajan@f6aecc0",
       "count": 1,
       "uniques": 1
     }
