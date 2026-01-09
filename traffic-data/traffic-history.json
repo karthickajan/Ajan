@@ -160,18 +160,25 @@
       "uniqueVisitors": 2,
       "clones": 6,
       "uniqueCloners": 5
+    },
+    {
+      "date": "2026-01-07",
+      "views": 9,
+      "uniqueVisitors": 3,
+      "clones": 4,
+      "uniqueCloners": 4
     }
   ],
   "startTracking": "2025-12-14",
-  "totalViews": 152,
-  "totalClones": 180,
-  "uniqueVisitors": 28,
-  "uniqueCloners": 134,
-  "lastUpdated": "2026-01-08",
+  "totalViews": 161,
+  "totalClones": 184,
+  "uniqueVisitors": 31,
+  "uniqueCloners": 138,
+  "lastUpdated": "2026-01-09",
   "topReferrers": [
     {
       "referrer": "github.com",
-      "count": 24,
+      "count": 27,
       "uniques": 3
     },
     {
@@ -184,20 +191,20 @@
     {
       "path": "/karthickajan/Ajan",
       "title": "karthickajan/Ajan: portfolio",
-      "count": 96,
+      "count": 103,
       "uniques": 22
     },
     {
       "path": "/karthickajan/Ajan/blob/main/traffic-data/traffic-history.json",
       "title": "Ajan/traffic-data/traffic-history.json at main · karthickajan/Ajan · GitHub",
-      "count": 16,
+      "count": 17,
       "uniques": 6
     },
     {
       "path": "/karthickajan/Ajan/pulse",
       "title": "Pulse · karthickajan/Ajan · GitHub",
-      "count": 10,
-      "uniques": 4
+      "count": 11,
+      "uniques": 5
     },
     {
       "path": "/karthickajan/Ajan/commits/main",
