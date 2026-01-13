@@ -188,19 +188,26 @@
       "uniqueVisitors": 2,
       "clones": 10,
       "uniqueCloners": 9
+    },
+    {
+      "date": "2026-01-11",
+      "views": 5,
+      "uniqueVisitors": 1,
+      "clones": 7,
+      "uniqueCloners": 6
     }
   ],
   "startTracking": "2025-12-14",
-  "totalViews": 178,
-  "totalClones": 209,
-  "uniqueVisitors": 36,
-  "uniqueCloners": 160,
-  "lastUpdated": "2026-01-12",
+  "totalViews": 183,
+  "totalClones": 216,
+  "uniqueVisitors": 37,
+  "uniqueCloners": 166,
+  "lastUpdated": "2026-01-13",
   "topReferrers": [
     {
       "referrer": "github.com",
-      "count": 29,
-      "uniques": 3
+      "count": 24,
+      "uniques": 2
     },
     {
       "referrer": "Google",
@@ -212,20 +219,14 @@
     {
       "path": "/karthickajan/Ajan",
       "title": "karthickajan/Ajan: portfolio",
-      "count": 108,
+      "count": 102,
       "uniques": 24
     },
     {
       "path": "/karthickajan/Ajan/blob/main/traffic-data/traffic-history.json",
       "title": "Ajan/traffic-data/traffic-history.json at main · karthickajan/Ajan · GitHub",
-      "count": 15,
+      "count": 12,
       "uniques": 8
-    },
-    {
-      "path": "/karthickajan/Ajan/pulse",
-      "title": "Pulse · karthickajan/Ajan · GitHub",
-      "count": 9,
-      "uniques": 5
     },
     {
       "path": "/karthickajan/Ajan/commits/main",
@@ -234,10 +235,10 @@
       "uniques": 5
     },
     {
-      "path": "/karthickajan/Ajan/graphs/traffic",
-      "title": "Traffic · karthickajan/Ajan",
-      "count": 3,
-      "uniques": 1
+      "path": "/karthickajan/Ajan/pulse",
+      "title": "Pulse · karthickajan/Ajan · GitHub",
+      "count": 7,
+      "uniques": 5
     },
     {
       "path": "/karthickajan/Ajan/commit/617a02bfb899136723ff1b6e56c1e209a185a522",
@@ -252,20 +253,26 @@
       "uniques": 2
     },
     {
+      "path": "/karthickajan/Ajan/blob/main/PORTFOLIO_TEMPLATE.md",
+      "title": "Ajan/PORTFOLIO_TEMPLATE.md at main · karthickajan/Ajan · GitHub",
+      "count": 1,
+      "uniques": 1
+    },
+    {
       "path": "/karthickajan/Ajan/blob/main/src/assets/aboutss.png",
       "title": "Ajan/src/assets/aboutss.png at main · karthickajan/Ajan",
       "count": 1,
       "uniques": 1
     },
     {
-      "path": "/karthickajan/Ajan/branches",
-      "title": "Branches · karthickajan/Ajan",
+      "path": "/karthickajan/Ajan/commit/0139b52494dce757b83170cfeb90520b0fa6b90b",
+      "title": "📊 Update traffic data [skip ci] · karthickajan/Ajan@0139b52 · GitHub",
       "count": 1,
       "uniques": 1
     },
     {
-      "path": "/karthickajan/Ajan/commit/0139b52494dce757b83170cfeb90520b0fa6b90b",
-      "title": "📊 Update traffic data [skip ci] · karthickajan/Ajan@0139b52 · GitHub",
+      "path": "/karthickajan/Ajan/edit/main/README.md",
+      "title": "Editing Ajan/README.md at main · karthickajan/Ajan",
       "count": 1,
       "uniques": 1
     }
