@@ -202,18 +202,25 @@
       "uniqueVisitors": 2,
       "clones": 4,
       "uniqueCloners": 4
+    },
+    {
+      "date": "2026-01-13",
+      "views": 1,
+      "uniqueVisitors": 1,
+      "clones": 16,
+      "uniqueCloners": 6
     }
   ],
   "startTracking": "2025-12-14",
-  "totalViews": 190,
-  "totalClones": 220,
-  "uniqueVisitors": 39,
-  "uniqueCloners": 170,
-  "lastUpdated": "2026-01-14",
+  "totalViews": 191,
+  "totalClones": 236,
+  "uniqueVisitors": 40,
+  "uniqueCloners": 176,
+  "lastUpdated": "2026-01-15",
   "topReferrers": [
     {
       "referrer": "github.com",
-      "count": 23,
+      "count": 20,
       "uniques": 2
     },
     {
@@ -226,14 +233,14 @@
     {
       "path": "/karthickajan/Ajan",
       "title": "karthickajan/Ajan: portfolio",
-      "count": 105,
-      "uniques": 22
+      "count": 69,
+      "uniques": 21
     },
     {
       "path": "/karthickajan/Ajan/blob/main/traffic-data/traffic-history.json",
       "title": "Ajan/traffic-data/traffic-history.json at main · karthickajan/Ajan · GitHub",
-      "count": 11,
-      "uniques": 7
+      "count": 9,
+      "uniques": 6
     },
     {
       "path": "/karthickajan/Ajan/commits/main",
@@ -244,8 +251,8 @@
     {
       "path": "/karthickajan/Ajan/pulse",
       "title": "Pulse · karthickajan/Ajan · GitHub",
-      "count": 7,
-      "uniques": 5
+      "count": 6,
+      "uniques": 4
     },
     {
       "path": "/karthickajan/Ajan/commit/617a02bfb899136723ff1b6e56c1e209a185a522",
@@ -266,12 +273,6 @@
       "uniques": 1
     },
     {
-      "path": "/karthickajan/Ajan/blob/main/src/assets/aboutss.png",
-      "title": "Ajan/src/assets/aboutss.png at main · karthickajan/Ajan",
-      "count": 1,
-      "uniques": 1
-    },
-    {
       "path": "/karthickajan/Ajan/commit/0139b52494dce757b83170cfeb90520b0fa6b90b",
       "title": "📊 Update traffic data [skip ci] · karthickajan/Ajan@0139b52 · GitHub",
       "count": 1,
@@ -280,6 +281,12 @@
     {
       "path": "/karthickajan/Ajan/edit/main/README.md",
       "title": "Editing Ajan/README.md at main · karthickajan/Ajan",
+      "count": 1,
+      "uniques": 1
+    },
+    {
+      "path": "/karthickajan/Ajan/forks",
+      "title": "Forks · karthickajan/Ajan",
       "count": 1,
       "uniques": 1
     }
