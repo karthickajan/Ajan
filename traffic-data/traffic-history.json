@@ -223,18 +223,25 @@
       "uniqueVisitors": 1,
       "clones": 10,
       "uniqueCloners": 8
+    },
+    {
+      "date": "2026-01-16",
+      "views": 1,
+      "uniqueVisitors": 1,
+      "clones": 7,
+      "uniqueCloners": 6
     }
   ],
   "startTracking": "2025-12-14",
-  "totalViews": 193,
-  "totalClones": 252,
-  "uniqueVisitors": 42,
-  "uniqueCloners": 189,
-  "lastUpdated": "2026-01-17",
+  "totalViews": 194,
+  "totalClones": 259,
+  "uniqueVisitors": 43,
+  "uniqueCloners": 195,
+  "lastUpdated": "2026-01-18",
   "topReferrers": [
     {
       "referrer": "github.com",
-      "count": 20,
+      "count": 16,
       "uniques": 2
     }
   ],
@@ -242,7 +249,7 @@
     {
       "path": "/karthickajan/Ajan",
       "title": "karthickajan/Ajan: portfolio",
-      "count": 58,
+      "count": 55,
       "uniques": 16
     },
     {
@@ -252,26 +259,26 @@
       "uniques": 4
     },
     {
-      "path": "/karthickajan/Ajan/pulse",
-      "title": "Pulse · karthickajan/Ajan · GitHub",
-      "count": 3,
-      "uniques": 3
-    },
-    {
       "path": "/karthickajan/Ajan/graphs/contributors",
       "title": "Contributors to karthickajan/Ajan",
       "count": 2,
       "uniques": 2
     },
     {
-      "path": "/karthickajan/Ajan/commits/main",
-      "title": "Commits · karthickajan/Ajan",
+      "path": "/karthickajan/Ajan/pulse",
+      "title": "Pulse · karthickajan/Ajan · GitHub",
       "count": 2,
-      "uniques": 1
+      "uniques": 2
     },
     {
       "path": "/karthickajan/Ajan/blob/main/PORTFOLIO_TEMPLATE.md",
       "title": "Ajan/PORTFOLIO_TEMPLATE.md at main · karthickajan/Ajan · GitHub",
+      "count": 1,
+      "uniques": 1
+    },
+    {
+      "path": "/karthickajan/Ajan/commits/main",
+      "title": "Commits · karthickajan/Ajan",
       "count": 1,
       "uniques": 1
     },
