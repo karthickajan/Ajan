@@ -279,14 +279,21 @@
       "uniqueVisitors": 1,
       "clones": 8,
       "uniqueCloners": 5
+    },
+    {
+      "date": "2026-01-24",
+      "views": 0,
+      "uniqueVisitors": 0,
+      "clones": 11,
+      "uniqueCloners": 7
     }
   ],
   "startTracking": "2025-12-14",
   "totalViews": 195,
-  "totalClones": 330,
+  "totalClones": 341,
   "uniqueVisitors": 44,
-  "uniqueCloners": 249,
-  "lastUpdated": "2026-01-25",
+  "uniqueCloners": 256,
+  "lastUpdated": "2026-01-26",
   "topReferrers": [
     {
       "referrer": "github.com",
@@ -298,8 +305,8 @@
     {
       "path": "/karthickajan/Ajan",
       "title": "karthickajan/Ajan: portfolio",
-      "count": 21,
-      "uniques": 9
+      "count": 14,
+      "uniques": 7
     },
     {
       "path": "/karthickajan/Ajan/blob/main/PORTFOLIO_TEMPLATE.md",
@@ -314,26 +321,8 @@
       "uniques": 1
     },
     {
-      "path": "/karthickajan/Ajan/commits/main",
-      "title": "Commits · karthickajan/Ajan",
-      "count": 1,
-      "uniques": 1
-    },
-    {
-      "path": "/karthickajan/Ajan/edit/main/README.md",
-      "title": "Editing Ajan/README.md at main · karthickajan/Ajan",
-      "count": 1,
-      "uniques": 1
-    },
-    {
       "path": "/karthickajan/Ajan/tree/main",
       "title": "GitHub - karthickajan/Ajan: portfolio",
-      "count": 1,
-      "uniques": 1
-    },
-    {
-      "path": "/karthickajan/Ajan/tree/main/src",
-      "title": "Ajan/src at main · karthickajan/Ajan",
       "count": 1,
       "uniques": 1
     }

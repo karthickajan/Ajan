@@ -10,7 +10,7 @@
 | Metric | Count |
 |--------|-------|
 | 👀 Views | <!-- VIEWS_COUNT -->195<!-- /VIEWS_COUNT --> |
-| 📥 Clones | <!-- CLONES_COUNT -->330<!-- /CLONES_COUNT --> |
+| 📥 Clones | <!-- CLONES_COUNT -->341<!-- /CLONES_COUNT --> |
 | ⭐ Stars | ![Stars](https://img.shields.io/github/stars/karthickajan/Ajan?style=flat-square) |
 | 🍴 Forks | ![Forks](https://img.shields.io/github/forks/karthickajan/Ajan?style=flat-square) |
 | 👁️ Watchers | ![Watchers](https://img.shields.io/github/watchers/karthickajan/Ajan?style=flat-square) |
