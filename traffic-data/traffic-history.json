@@ -314,14 +314,21 @@
       "uniqueVisitors": 0,
       "clones": 15,
       "uniqueCloners": 10
+    },
+    {
+      "date": "2026-01-29",
+      "views": 6,
+      "uniqueVisitors": 1,
+      "clones": 14,
+      "uniqueCloners": 11
     }
   ],
   "startTracking": "2025-12-14",
-  "totalViews": 198,
-  "totalClones": 399,
-  "uniqueVisitors": 46,
-  "uniqueCloners": 296,
-  "lastUpdated": "2026-01-30",
+  "totalViews": 204,
+  "totalClones": 413,
+  "uniqueVisitors": 47,
+  "uniqueCloners": 307,
+  "lastUpdated": "2026-01-31",
   "topReferrers": [
     {
       "referrer": "github.com",
@@ -332,9 +339,27 @@
   "popularPaths": [
     {
       "path": "/karthickajan/Ajan",
-      "title": "GitHub - karthickajan/Ajan: portfolio",
-      "count": 6,
-      "uniques": 4
+      "title": "karthickajan/Ajan: portfolio",
+      "count": 8,
+      "uniques": 3
+    },
+    {
+      "path": "/karthickajan/Ajan/blob/main/src/assets/aboutss.png",
+      "title": "Ajan/src/assets/aboutss.png at main · karthickajan/Ajan",
+      "count": 1,
+      "uniques": 1
+    },
+    {
+      "path": "/karthickajan/Ajan/pulse",
+      "title": "Pulse · karthickajan/Ajan",
+      "count": 1,
+      "uniques": 1
+    },
+    {
+      "path": "/karthickajan/Ajan/tags",
+      "title": "Releases · karthickajan/Ajan",
+      "count": 1,
+      "uniques": 1
     }
   ]
 }
