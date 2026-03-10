@@ -580,18 +580,25 @@
       "uniqueVisitors": 0,
       "clones": 10,
       "uniqueCloners": 7
+    },
+    {
+      "date": "2026-03-08",
+      "views": 5,
+      "uniqueVisitors": 1,
+      "clones": 9,
+      "uniqueCloners": 5
     }
   ],
   "startTracking": "2025-12-14",
-  "totalViews": 209,
-  "totalClones": 859,
-  "uniqueVisitors": 50,
-  "uniqueCloners": 611,
-  "lastUpdated": "2026-03-09",
+  "totalViews": 214,
+  "totalClones": 868,
+  "uniqueVisitors": 51,
+  "uniqueCloners": 616,
+  "lastUpdated": "2026-03-10",
   "topReferrers": [
     {
       "referrer": "github.com",
-      "count": 6,
+      "count": 3,
       "uniques": 1
     }
   ],
@@ -599,6 +606,12 @@
     {
       "path": "/karthickajan/Ajan",
       "title": "karthickajan/Ajan: portfolio",
+      "count": 5,
+      "uniques": 1
+    },
+    {
+      "path": "/karthickajan/Ajan/commits",
+      "title": "Commits · karthickajan/Ajan",
       "count": 2,
       "uniques": 1
     }
