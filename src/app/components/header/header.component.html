@@ -1,8 +1,15 @@
 <nav class="nav" [class.scrolled]="isScrolled">
   <div class="nav-container">
     <!-- Logo/Name -->
-    <a href="#" class="nav-logo" role="generic" (click)="scrollToTop($event)">
-      <span class="block" style="font-family: 'Dancing Script', cursive; font-size: 26px; background: linear-gradient(90deg, rgb(145, 94, 255), rgb(0, 191, 255)) text; -webkit-text-fill-color: transparent;">&lt;/Karthick Ajan&gt;</span>
+    <a href="#" class="nav-logo" role="generic" (click)="scrollToTop($event)" 
+      style="display: flex; align-items: center; gap: 8px; text-decoration: none;">
+      <img src="assets/owl_apple_180.png" alt="Logo" 
+          style="height: 36px; width: 36px; object-fit: contain; flex-shrink: 0;">
+      <span style="font-family: 'Dancing Script', cursive; font-size: 26px; 
+                  background: linear-gradient(90deg, rgb(145, 94, 255), rgb(0, 191, 255)) text; 
+                  -webkit-text-fill-color: transparent;">
+        &lt;/Karthick Ajan&gt;
+      </span>
     </a>
     
     <!-- Navigation Menu -->
