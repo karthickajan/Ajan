@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, ElementRef, ViewChildren, QueryList, AfterViewInit, Inject, PLATFORM_ID } from '@angular/core';
+import { Component, OnInit, OnDestroy, ElementRef, ViewChildren, ViewChild, QueryList, AfterViewInit, Inject, PLATFORM_ID, HostListener } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { PortfolioDataService } from '../../services/portfolio-data.service';
 
@@ -20,9 +20,14 @@ interface ProjectData {
 })
 export class ProjectsComponent implements OnInit, OnDestroy, AfterViewInit {
   @ViewChildren('projectCard', { read: ElementRef }) projectCards!: QueryList<ElementRef>;
-  
+  @ViewChild('projectsGrid', { read: ElementRef }) projectsGrid!: ElementRef;
+
   private intersectionObserver?: IntersectionObserver;
   private isInView = false;
+
+  // Mobile carousel state
+  isMobile = false;
+  activeIndex = 0;
   
   projects: ProjectData[] = [
   {
@@ -51,7 +56,7 @@ export class ProjectsComponent implements OnInit, OnDestroy, AfterViewInit {
     ],
     image: "assets/helion.webp",
     source_code_link: "https://github.com/karthickajan/HelionAdvisory",
-    live_project_link: "https://karthickajan.github.io/HelionAdvisory/"
+    live_project_link: "https://helionadvisory.net/"
   },
   {
     name: "CipherKit 🔐",
@@ -102,6 +107,7 @@ export class ProjectsComponent implements OnInit, OnDestroy, AfterViewInit {
       { name: "Python", color: "text-blue-400" },
       { name: "OpenCV", color: "text-green-400" },
       { name: "AI/ML", color: "text-purple-400" },
+      { name: "YOLOv8", color: "text-red-400" },
       { name: "Chess", color: "text-orange-400" }
     ],
     image: "assets/chessyss.webp",
@@ -116,7 +122,31 @@ export class ProjectsComponent implements OnInit, OnDestroy, AfterViewInit {
   ) {}
 
   ngOnInit() {
-    // Component initialization
+    if (isPlatformBrowser(this.platformId)) {
+      this.isMobile = window.innerWidth <= 768;
+    }
+  }
+
+  @HostListener('window:resize')
+  onResize() {
+    if (isPlatformBrowser(this.platformId)) {
+      this.isMobile = window.innerWidth <= 768;
+    }
+  }
+
+  onGridScroll() {
+    if (!this.projectsGrid || !isPlatformBrowser(this.platformId)) return;
+    const grid = this.projectsGrid.nativeElement as HTMLElement;
+    const cardWidth = grid.scrollWidth / this.projects.length;
+    this.activeIndex = Math.round(grid.scrollLeft / cardWidth);
+  }
+
+  scrollToCard(index: number) {
+    if (!this.projectsGrid || !isPlatformBrowser(this.platformId)) return;
+    const grid = this.projectsGrid.nativeElement as HTMLElement;
+    const cardWidth = grid.scrollWidth / this.projects.length;
+    grid.scrollTo({ left: cardWidth * index, behavior: 'smooth' });
+    this.activeIndex = index;
   }
 
   ngAfterViewInit() {

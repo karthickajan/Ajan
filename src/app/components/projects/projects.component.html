@@ -7,7 +7,7 @@
     </div>
 
     <!-- Projects Grid -->
-    <div class="projects-grid">
+    <div class="projects-grid" #projectsGrid (scroll)="onGridScroll()">
       <div 
         #projectCard
         class="project-card"
@@ -70,6 +70,16 @@
           </a>
         </div>
       </div>
+    </div>
+
+    <!-- Scroll dots (mobile only) -->
+    <div class="scroll-dots" *ngIf="isMobile">
+      <div 
+        class="dot"
+        *ngFor="let project of projects; let i = index"
+        [class.active]="activeIndex === i"
+        (click)="scrollToCard(i)"
+      ></div>
     </div>
   </div>
 </section>
