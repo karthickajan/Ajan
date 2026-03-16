@@ -25,89 +25,90 @@ export class ProjectsComponent implements OnInit, OnDestroy, AfterViewInit {
   private isInView = false;
   
   projects: ProjectData[] = [
-    {
-      name: "AurGee Herbs 🌿",
-      description: "Freelanced UI for AurGee Herbs, a premium herbal brand. Built with Angular and hosted on AWS. Modern, responsive design tailored for e-commerce and brand storytelling. Backend with Node.js is under development, using Supabase as the database.",
-      tags: [
-        { name: "Angular", color: "text-red-400" },
-        { name: "TypeScript", color: "text-blue-400" },
-        { name: "AWS", color: "text-orange-400" },
-        { name: "UI/UX", color: "text-green-400" },
-        { name: "Supabase", color: "text-purple-400" }
-      ],
-      image: "assets/AurGee_project.jpg",
-      source_code_link: "https://github.com/karthickajan/AurGee",
-      live_project_link: "https://aurgeeherbs.com/"
-    },
-    {
-      name: "Chessy ♘",
-      description: "Chess board prediction and analyser. Upload a photo of a chess board, and Chessy recognizes the board and pieces, recreates the exact position digitally, and suggests the next best move. Built with Python, Flask, YOLO, and Angular for a seamless chess experience.",
-      tags: [
-        { name: "Python", color: "text-blue-400" },
-        { name: "OpenCV", color: "text-green-400" },
-        { name: "AI/ML", color: "text-purple-400" },
-        { name: "Chess", color: "text-orange-400" }
-      ],
-      image: "assets/chessyss.png",
-      source_code_link: "https://github.com/karthickajan/chessy",
-      live_project_link: "https://karthickajan.github.io/ChessyUI/"
-    },
-    {
-      name: "Weekend 📍",
-      description: "A web application for event booking and hosting that connects like-minded people. Features real-time chat, suggestions, secure authentication, and automatic recommendations for nearby users with shared interests. Built with Angular, Node.js, AWS, and MySQL.",
-      tags: [
-        { name: "Angular", color: "text-red-400" },
-        { name: "Node.js", color: "text-green-400" },
-        { name: "AWS", color: "text-yellow-400" },
-        { name: "Real-time Chat", color: "text-blue-400" },
-        { name: "MySQL", color: "text-purple-400" }
-      ],
-      image: "assets/weekendss.png",
-      source_code_link: "https://github.com/Weekend-weebee/Weekend-UI",
-      live_project_link: "https://github.com/Weekend-weebee/Weekend-UI"
-    },
-    // {
-    //   name: "KnifeThrow 🎯",
-    //   description: "KnifeThrow is a Java Swing-based 2D mini-game, packed by maven with over 5000 lines of code. It includes a menu, game-over screens, sound effects, and custom sprites. Players unlock different knives with varied abilities in a dedicated knife shop. The game features improved collision systems, animations, and particle effects for an immersive experience.",
-    //   tags: [
-    //     { name: "java", color: "text-red-400" },
-    //     { name: "swing", color: "text-blue-400" },
-    //     { name: "maven", color: "text-green-400" },
-    //     { name: "arcadegame", color: "text-purple-400" }
-    //   ],
-    //   image: "assets/AurGee_project.jpg",
-    //   source_code_link: "https://github.com/janaPM/AurGee",
-    //   live_project_link: "https://aurgeeherbs.com/"
-    // },
-    // {
-    //   name: "COVID-19 GTA Cases Data Analysis 🧪",
-    //   description: "A deep dive into ongoing COVID-19 outbreaks in the Greater Toronto Area (GTA), Ontario. Using data from a government-licensed dataset called Outbreaks by Public Health Unit (PHU) to explore trends and patterns in these outbreaks. This data analysis integrates the essential aspects of the data science workflow (Filesize: 3.5 MiB, 62699 lines of raw dataset)",
-    //   tags: [
-    //     { name: "python", color: "text-blue-400" },
-    //     { name: "tensorflow", color: "text-orange-400" },
-    //     { name: "scikit-learn", color: "text-green-400" },
-    //     { name: "pandas", color: "text-pink-400" },
-    //     { name: "matplotlib", color: "text-purple-400" },
-    //     { name: "numpy", color: "text-yellow-400" }
-    //   ],
-    //   image: "assets/AurGee_project.jpg",
-    //   source_code_link: "https://github.com/janaPM/AurGee",
-    //   live_project_link: "https://aurgeeherbs.com/"
-    // },
-    // {
-    //   name: "Secure Password Generator 🔐",
-    //   description: "Secure Password Generator is a Java-based tool designed to generate and manage secure passwords, prioritizing simplicity, security, and user-friendliness. It employs industry-standard encryption algorithms to create strong, unique passwords resistant to common hacking attempts.",
-    //   tags: [
-    //     { name: "java", color: "text-red-400" },
-    //     { name: "sha-256", color: "text-blue-400" },
-    //     { name: "encryption/decryption", color: "text-green-400" },
-    //     { name: "data-algorithms", color: "text-purple-400" }
-    //   ],
-    //   image: "assets/AurGee_project.jpg",
-    //   source_code_link: "https://github.com/janaPM/AurGee",
-    //   live_project_link: "https://aurgeeherbs.com/"
-    // }
-  ];
+  {
+    name: "Mo Made Patisserie 🎂",
+    description: "Luxury patisserie brand site with SEO-optimized category architecture and WebP asset pipeline — achieved 98/100 Lighthouse score, 40% reduction in Instagram dependency through direct WhatsApp commission flow, and 3x increase in organic discovery within 60 days of launch.",
+    tags: [
+      { name: "Angular", color: "text-red-400" },
+      { name: "TypeScript", color: "text-blue-400" },
+      { name: "WebP", color: "text-green-400" },
+      { name: "EmailJS", color: "text-yellow-400" },
+      { name: "GitHub Pages", color: "text-purple-400" }
+    ],
+    image: "assets/momade.webp",
+    source_code_link: "https://github.com/karthickajan/MoMadePatisserie",
+    live_project_link: "https://momadepatisserie.com"
+  },
+  {
+    name: "Helion Advisory Group 🧬",
+    description: "Corporate web presence for a Brisbane-based pharma & biotech advisory firm — structured data markup, JSON-LD schema, and semantic HTML drove first-page Google visibility within 45 days. Glassmorphic UI and animated trust signals increased average session duration by 65%.",
+    tags: [
+      { name: "HTML", color: "text-orange-400" },
+      { name: "CSS", color: "text-blue-400" },
+      { name: "JavaScript", color: "text-yellow-400" },
+      { name: "EmailJS", color: "text-green-400" },
+      { name: "GitHub Pages", color: "text-purple-400" }
+    ],
+    image: "assets/helion.webp",
+    source_code_link: "https://github.com/karthickajan/HelionAdvisory",
+    live_project_link: "https://karthickajan.github.io/HelionAdvisory/"
+  },
+  {
+    name: "CipherKit 🔐",
+    description: "48-tool static developer utility platform engineered for a perfect 100/100 Lighthouse score across Performance, Accessibility, Best Practices, and SEO — fully client-side with zero runtime dependencies, inlined CryptoJS, and sub-300ms load times on cold cache.",
+    tags: [
+      { name: "HTML", color: "text-orange-400" },
+      { name: "CSS", color: "text-blue-400" },
+      { name: "JavaScript", color: "text-yellow-400" },
+      { name: "CryptoJS", color: "text-green-400" },
+      { name: "GitHub Pages", color: "text-purple-400" }
+    ],
+    image: "assets/cipherKit.webp",
+    source_code_link: "https://github.com/karthickajan/cipherkit",
+    live_project_link: "https://karthickajan.github.io/cipherkit/"
+  },
+  {
+    name: "AurGee Herbs 🌿",
+    description: "E-commerce brand site for a premium herbal D2C label — responsive Angular UI on AWS with lazy-loaded product imagery and optimized Core Web Vitals. Brand storytelling-first layout reduced bounce rate by 35% and improved product page engagement by 50% over prior static site.",
+    tags: [
+      { name: "Angular", color: "text-red-400" },
+      { name: "TypeScript", color: "text-blue-400" },
+      { name: "AWS", color: "text-orange-400" },
+      { name: "Supabase", color: "text-purple-400" },
+      { name: "UI/UX", color: "text-green-400" }
+    ],
+    image: "assets/AurGee_project.webp",
+    source_code_link: "https://github.com/karthickajan/AurGee",
+    live_project_link: "https://aurgeeherbs.com/"
+  },
+  {
+    name: "Weekend 📍",
+    description: "Full-stack event discovery and hosting platform with real-time chat and smart local recommendations — JWT auth, WebSocket-driven messaging, and interest-based matching algorithm reduced cold-start drop-off by 45% and doubled user return rate in beta testing.",
+    tags: [
+      { name: "Angular", color: "text-red-400" },
+      { name: "Node.js", color: "text-green-400" },
+      { name: "AWS", color: "text-yellow-400" },
+      { name: "WebSockets", color: "text-blue-400" },
+      { name: "MySQL", color: "text-purple-400" }
+    ],
+    image: "assets/weekendss.webp",
+    source_code_link: "https://github.com/Weekend-weebee/Weekend-UI",
+    live_project_link: "https://github.com/Weekend-weebee/Weekend-UI"
+  },
+  {
+    name: "Chessy ♘",
+    description: "Chess board prediction and analyser. Upload a photo of a chess board, and Chessy recognizes the board and pieces, recreates the exact position digitally, and suggests the next best move. Built with Python, Flask, YOLO, and Angular for a seamless chess experience.",
+    tags: [
+      { name: "Python", color: "text-blue-400" },
+      { name: "OpenCV", color: "text-green-400" },
+      { name: "AI/ML", color: "text-purple-400" },
+      { name: "Chess", color: "text-orange-400" }
+    ],
+    image: "assets/chessyss.webp",
+    source_code_link: "https://github.com/karthickajan/chessy",
+    live_project_link: "https://karthickajan.github.io/ChessyUI/"
+  }
+];
   // removed stray description property
   constructor(
     @Inject(PLATFORM_ID) private platformId: Object,

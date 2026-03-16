@@ -212,7 +212,7 @@ export class PortfolioDataService {
     {
       title: "Electrical & Electronics Engineering B.Tech",
       company_name: "Vellore Institute of Technology, Vellore",
-      icon: "assets/vit-logo.png",
+      icon: "assets/vit-logo.webp",
       iconBg: "#fff",
       date: "2020 - 2024",
       points: [        
@@ -223,7 +223,7 @@ export class PortfolioDataService {
     {
       title: "High School",
       company_name: "MIRS, Chennai",
-      icon: "assets/mirs-logo.jpeg",
+      icon: "assets/mirs-logo.webp",
       iconBg: "#fff",
       date: "2018 - 2020",
       points: [        

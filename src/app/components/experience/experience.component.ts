@@ -56,7 +56,7 @@ export class ExperienceComponent implements OnInit, AfterViewInit {
     {
       title: "Software Engineer",
       company_name: "Bajaj Finserv",
-      icon: "assets/bajaj-logo.png",
+      icon: "assets/bajaj-logo.webp",
       iconBg: "#ffffff",
       date: "Jan 2024 - Present",
       points: [

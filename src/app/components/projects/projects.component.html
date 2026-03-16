@@ -20,6 +20,9 @@
             [src]="project.image" 
             [alt]="project.name"
             class="project-image"
+            loading="lazy"
+            width="800"
+            height="520"
             (error)="onImageError($event)"
           />
           
@@ -31,7 +34,7 @@
               title="View Source Code"
             >
               <img 
-                src="/assets/github.png" 
+                src="/assets/github.webp" 
                 alt="source code"
                 class="github-icon"
               />

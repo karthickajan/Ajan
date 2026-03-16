@@ -27,7 +27,7 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
             </p>
             
             <p class="welcome-message">
-              Welcome to my portfolio, please visit on desktop for an interactive experience!
+              Welcome to my corner of the internet, where every project tells a story worth reading.
             </p>
           </div>
         </div>

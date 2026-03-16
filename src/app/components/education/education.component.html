@@ -17,7 +17,7 @@
       <div class="vertical-timeline-element" *ngFor="let edu of education; trackBy: trackByEducation">
         <span class="vertical-timeline-element-icon bounce-in" [style.background]="edu.iconBg">
           <div class="education-icon-wrapper">
-            <img [src]="edu.icon" [alt]="edu.company_name" class="education-icon">
+            <img [src]="edu.icon" [alt]="edu.company_name" class="education-icon" loading="lazy" width="200" height="200">
           </div>
         </span>
         <div class="vertical-timeline-element-content bounce-in">
