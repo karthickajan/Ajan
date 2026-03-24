@@ -678,18 +678,25 @@
       "uniqueVisitors": 0,
       "clones": 11,
       "uniqueCloners": 8
+    },
+    {
+      "date": "2026-03-22",
+      "views": 0,
+      "uniqueVisitors": 0,
+      "clones": 9,
+      "uniqueCloners": 5
     }
   ],
   "startTracking": "2025-12-14",
   "totalViews": 256,
-  "totalClones": 1107,
+  "totalClones": 1116,
   "uniqueVisitors": 56,
-  "uniqueCloners": 729,
-  "lastUpdated": "2026-03-23",
+  "uniqueCloners": 734,
+  "lastUpdated": "2026-03-24",
   "topReferrers": [
     {
       "referrer": "github.com",
-      "count": 16,
+      "count": 13,
       "uniques": 3
     }
   ],
@@ -697,7 +704,7 @@
     {
       "path": "/karthickajan/Ajan",
       "title": "karthickajan/Ajan: portfolio",
-      "count": 20,
+      "count": 17,
       "uniques": 3
     },
     {
@@ -710,12 +717,6 @@
       "path": "/karthickajan/Ajan/compare/gh-pages",
       "title": "Comparing gh-pages...gh-pages · karthickajan/Ajan",
       "count": 4,
-      "uniques": 1
-    },
-    {
-      "path": "/karthickajan/Ajan/commits",
-      "title": "Commits · karthickajan/Ajan",
-      "count": 2,
       "uniques": 1
     },
     {
@@ -751,6 +752,12 @@
     {
       "path": "/karthickajan/Ajan/compare/gh-pages...main",
       "title": "Comparing gh-pages...main · karthickajan/Ajan",
+      "count": 1,
+      "uniques": 1
+    },
+    {
+      "path": "/karthickajan/Ajan/compare/main...gh-pages",
+      "title": "Comparing main...gh-pages · karthickajan/Ajan",
       "count": 1,
       "uniques": 1
     }
