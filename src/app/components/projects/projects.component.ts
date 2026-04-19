@@ -70,7 +70,7 @@ export class ProjectsComponent implements OnInit, OnDestroy, AfterViewInit {
     ],
     image: "assets/cipherKit.webp",
     source_code_link: "https://github.com/karthickajan/cipherkit",
-    live_project_link: "https://karthickajan.github.io/cipherkit/"
+    live_project_link: "https://cipherkit.app"
   },
   {
     name: "AurGee Herbs 🌿",
