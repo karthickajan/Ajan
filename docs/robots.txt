@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://karthickajan.github.io/Ajan/sitemap.xml
