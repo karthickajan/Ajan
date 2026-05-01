@@ -63,7 +63,7 @@
             *ngIf="project.live_project_link"
             [href]="project.live_project_link"
             target="_blank"
-            rel="noopener"
+            [attr.rel]="project.live_project_link === 'https://cipherkit.app' ? 'dofollow' : 'noopener noreferrer'"
             class="live-project-btn"
           >
             Live Project
