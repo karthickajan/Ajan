@@ -60,7 +60,7 @@ export class ProjectsComponent implements OnInit, OnDestroy, AfterViewInit {
   },
   {
     name: "CipherKit 🔐",
-    description: "48-tool static developer utility platform engineered for a perfect 100/100 Lighthouse score across Performance, Accessibility, Best Practices, and SEO — fully client-side with zero runtime dependencies, inlined CryptoJS, and sub-300ms load times on cold cache.",
+    description: "85-tool static developer utility platform engineered for a perfect 100/100 Lighthouse score across Performance, Accessibility, Best Practices, and SEO — fully client-side with zero runtime dependencies, inlined CryptoJS, and sub-300ms load times on cold cache.",
     tags: [
       { name: "HTML", color: "text-orange-400" },
       { name: "CSS", color: "text-blue-400" },
@@ -102,17 +102,18 @@ export class ProjectsComponent implements OnInit, OnDestroy, AfterViewInit {
   },
   {
     name: "Chessy ♘",
-    description: "Chess board prediction and analyser. Upload a photo of a chess board, and Chessy recognizes the board and pieces, recreates the exact position digitally, and suggests the next best move. Built with Python, Flask, YOLO, and Angular for a seamless chess experience.",
+    description: "```Chess board analyser powered by computer vision. Upload a photo of any chess board — Chessy detects the board, identifies all 64 squares, reconstructs the exact position digitally, and opens it in Lichess for engine analysis. Built with Python, Gradio, YOLOv8, and OpenCV.```",
     tags: [
       { name: "Python", color: "text-blue-400" },
       { name: "OpenCV", color: "text-green-400" },
-      { name: "AI/ML", color: "text-purple-400" },
+      { name: "ComputerVision", color: "text-purple-400" },
       { name: "YOLOv8", color: "text-red-400" },
-      { name: "Chess", color: "text-orange-400" }
+      { name: "HuggingFace", color: "text-orange-400" },
+      { name: "Gradio", color: "text-yellow-400" },
     ],
     image: "assets/chessyss.webp",
-    source_code_link: "https://github.com/karthickajan/chessy",
-    live_project_link: "https://karthickajan.github.io/ChessyUI/"
+    source_code_link: "https://github.com/karthickajan/Chessy",
+    live_project_link: "https://huggingface.co/spaces/karthickajan/chess"
   }
 ];
   // removed stray description property
