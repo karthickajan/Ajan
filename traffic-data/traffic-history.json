@@ -1231,14 +1231,28 @@
       "uniqueVisitors": 0,
       "clones": 16,
       "uniqueCloners": 8
+    },
+    {
+      "date": "2026-06-09",
+      "views": 1,
+      "uniqueVisitors": 1,
+      "clones": 19,
+      "uniqueCloners": 10
+    },
+    {
+      "date": "2026-06-10",
+      "views": 0,
+      "uniqueVisitors": 0,
+      "clones": 3,
+      "uniqueCloners": 3
     }
   ],
   "startTracking": "2025-12-14",
-  "totalViews": 282,
-  "totalClones": 2618,
-  "uniqueVisitors": 65,
-  "uniqueCloners": 1566,
-  "lastUpdated": "2026-06-11",
+  "totalViews": 283,
+  "totalClones": 2640,
+  "uniqueVisitors": 66,
+  "uniqueCloners": 1579,
+  "lastUpdated": "2026-06-12",
   "topReferrers": [
     {
       "referrer": "github.com",
@@ -1248,8 +1262,8 @@
   ],
   "popularPaths": [
     {
-      "path": "/karthickajan/Ajan/blob/main/package.json",
-      "title": "/blob/main/package.json",
+      "path": "/karthickajan/Ajan",
+      "title": "Overview",
       "count": 1,
       "uniques": 1
     }
