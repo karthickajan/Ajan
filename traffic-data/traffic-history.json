@@ -2211,26 +2211,33 @@
       "uniqueVisitors": 0,
       "clones": 9,
       "uniqueCloners": 8
+    },
+    {
+      "date": "2026-10-27",
+      "views": 2,
+      "uniqueVisitors": 1,
+      "clones": 20,
+      "uniqueCloners": 11
     }
   ],
   "startTracking": "2025-12-14",
-  "totalViews": 283,
-  "totalClones": 4170,
-  "uniqueVisitors": 66,
-  "uniqueCloners": 2565,
-  "lastUpdated": "2026-10-28",
+  "totalViews": 285,
+  "totalClones": 4190,
+  "uniqueVisitors": 67,
+  "uniqueCloners": 2576,
+  "lastUpdated": "2026-10-29",
   "topReferrers": [
     {
-      "referrer": "github.com",
-      "count": 1,
+      "referrer": "Google",
+      "count": 2,
       "uniques": 1
     }
   ],
   "popularPaths": [
     {
-      "path": "/karthickajan/Ajan",
-      "title": "Overview",
-      "count": 1,
+      "path": "/karthickajan/Ajan/blob/main/README.md",
+      "title": "/blob/main/README.md",
+      "count": 2,
       "uniques": 1
     }
   ]
