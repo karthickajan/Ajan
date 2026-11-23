@@ -2393,26 +2393,33 @@
       "uniqueVisitors": 0,
       "clones": 24,
       "uniqueCloners": 15
+    },
+    {
+      "date": "2026-11-22",
+      "views": 1,
+      "uniqueVisitors": 1,
+      "clones": 20,
+      "uniqueCloners": 13
     }
   ],
   "startTracking": "2025-12-14",
-  "totalViews": 287,
-  "totalClones": 4469,
-  "uniqueVisitors": 68,
-  "uniqueCloners": 2761,
-  "lastUpdated": "2026-11-22",
+  "totalViews": 288,
+  "totalClones": 4489,
+  "uniqueVisitors": 69,
+  "uniqueCloners": 2774,
+  "lastUpdated": "2026-11-23",
   "topReferrers": [
     {
-      "referrer": "Google",
-      "count": 2,
+      "referrer": "github.com",
+      "count": 1,
       "uniques": 1
     }
   ],
   "popularPaths": [
     {
-      "path": "/karthickajan/Ajan/blob/main/README.md",
-      "title": "/blob/main/README.md",
-      "count": 2,
+      "path": "/karthickajan/Ajan",
+      "title": "Overview",
+      "count": 1,
       "uniques": 1
     }
   ]
